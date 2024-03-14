@@ -1,0 +1,23 @@
+.container{
+    max-width: 1320px;
+    padding: 0px 12px;
+    margin: 0px auto ;
+    @include Phone{
+        max-width: 375px;
+    }
+    @include Small{
+        max-width: 575px;
+    }
+    @include Medium{
+        max-width: 767px;
+    }
+    @include Large{
+        max-width: 992px;
+    }
+    @include XLarge{
+        max-width: 1200px;
+    }
+}
+.container-fluid{
+    width: 100%;
+}
