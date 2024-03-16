@@ -27,27 +27,28 @@
 
 //由小到大
 @mixin Phone{
-    @media (min-width: (375px) ){
+    //當 裝置 大於或等於 375的時候套用
+    @media (min-width:375px ){
         @content;
     }
 }
 @mixin Small{
-    @media (min-width: (575px) ){
+    @media (min-width:575px){
         @content;
     }
 }
 @mixin Medium{
-    @media (min-width: (767px ) ){
+    @media (min-width: 767px  ){
         @content;
     }
 }
 @mixin Large{
-    @media (min-width: (992px) ){
+    @media (min-width: 992px ){
         @content;
     }
 }
 @mixin XLarge{
-    @media (min-width: (1200px) ){
+    @media (min-width: 1200px ){
         @content;
     }
 }

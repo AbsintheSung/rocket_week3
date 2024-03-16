@@ -1,0 +1,19 @@
+.px-sm-30{
+    padding-left: 30px;
+    padding-right: 30px;
+    @include Medium{
+        padding-left:0px;
+        padding-right:0px;
+    }
+}
+.py-30{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.px-sm-122{
+    @include Medium{
+        padding-left:122px;
+        padding-right:122px;
+    }
+}
