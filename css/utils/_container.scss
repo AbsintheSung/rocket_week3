@@ -5,7 +5,8 @@
         max-width: 100%;
     }
     @include Small{
-        max-width: 575px;
+        // max-width: 575px;
+        max-width: 100%;
     }
     @include Medium{
         max-width: 767px;

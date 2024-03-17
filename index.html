@@ -5,42 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/all.css">
-    <style>
-        .box1{
-            height:300px;
-        }
-        .box2{
-            height: 400px;
-        }
-    </style>
+
 </head>
 <body>
 
-    <header class="container px-sm-30 py-30 header_container">
-   
-        <input type="checkbox" id="navbarBtn" >
-        <label for="navbarBtn" class="navbarStyle"><div class="navbarStyle__line"></div></label>
-
-        <h1 class="header__title">
-            <a href=""><img src="./assets/img/logotype-sm-dark.svg"></img></a>
-        </h1>
-
-        <nav class="header_nav">
-            <ul class="header_navlist">
-                <li class="header_navlist__item"><a href="#">首頁</a></li>
-                <li class="header_navlist__item"><a href="#">甜點</a></li>
-                <li class="header_navlist__item"><a href="#">登入</a></li>
-            </ul>
-        </nav>
-
-        <a href="#"><img src="./assets//img/shopping_cart.png"  alt="購物車icon"></img></a>
+    <header class="container-fluid">
+        <div class="container px-sm-30 py-30 header_container">
+            <input type="checkbox" id="navbarBtn" >
+            <label for="navbarBtn" class="navbarStyle"><div class="navbarStyle__line"></div></label>
+    
+            <h1 class="header__title">
+                <a href=""><img src="./assets/img/logotype-sm-dark.svg"></img></a>
+            </h1>
+    
+            <nav class="header_nav">
+                <ul class="header_navlist">
+                    <li class="header_navlist__item"><a href="#">首頁</a></li>
+                    <li class="header_navlist__item"><a href="#">甜點</a></li>
+                    <li class="header_navlist__item"><a href="#">登入</a></li>
+                </ul>
+            </nav>
+    
+            <a href="#"><img src="./assets//img/shopping_cart.png"  alt="購物車icon"></img></a>
+        </div>   
     </header>
 
-    <div main></div>
 
-    <footer >
+    
+    <main class="container-fluid">
 
-        <div class="container-fluid bg_primary">
+        <section class="container home_category">
+            <div class="home_category__bg">
+                <!-- <img src="https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=2725&q=80"> -->
+            </div>
+            <ul class="home_category__list">
+                <li><a href="#">本日精選</a></li>
+                <li><a href="#">人氣推薦</a></li>
+                <li><a href="#">新品上市</a></li>
+            </ul>
+        </section>
+
+        <section class="home_introduce">
+            <ul>
+                <li class="container-fluid home_introduce__list">
+                    <div class="container introduce__listItem">
+                        <div class="introduce__listItem__imgcontent">
+                            <img alt="首頁商品介紹標語" src="./assets/img/home_sm_title1.svg">
+                            <img alt="首頁商品介紹圖片" src="https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=600&q=60">
+                        </div>
+                        <div class="introduce__listItem__content">
+                            <img alt="首頁商品介紹標語" src="./assets/img/home_ds_title1.svg">
+                            <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p><br>
+                            <p>是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                        </div>
+                    </div>
+                  
+                </li>
+
+                <li class="container-fluid home_introduce__list">
+                    <div class="container introduce__listItem">
+                       
+                        <div class="introduce__listItem__imgcontent">
+                            <img alt="首頁商品介紹標語" src="./assets/img/home_sm_title2.svg">
+                            <img alt="首頁商品介紹圖片" src="https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621c4e9986fba1c4514dfdc30e095bd2&auto=format&fit=crop&w=600&q=60">
+                        </div>
+                        <div class="introduce__listItem__content">
+                            <img alt="首頁商品介紹標語" src="./assets/img/home_ds_title2.svg">
+                            <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p><br>
+                            <p>是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
+                        </div>
+                      
+                    </div>
+                  
+                </li>
+            </ul>
+            <img alt="首頁商品介紹標語" src="./assets/img/home_sm_title3.svg">
+        </section>
+
+    </main>
+
+
+
+    <footer class="container-fluid">
+
+        <div class="bg_primary">
 
             <div class="container footer_subscribe py-30 px-sm-30">
                 <h2 class="footer_subscribe__title"><img alt="logo" src="./assets/img/logo-light.svg">訂閱你我的甜蜜</h2>
@@ -53,7 +101,7 @@
 
         </div>
        
-        <div class="container-fluid bg_secondary">
+        <div class="bg_secondary">
 
             <div class="container footer_info py-30  px-sm-30">
                 
@@ -82,7 +130,6 @@
 
     </footer>
 
-    <div class="container-fluid box1"></div>
-    <div class="container box2"></div>
+
 </body>
 </html>
