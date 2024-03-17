@@ -67,13 +67,6 @@ a {
   text-decoration: none;
 }
 
-:root {
-  --primary:#3F5D45;
-  --secondary:#EAF0ED;
-  --white:#FFFFFF;
-  --btn_color:#FFE180 ;
-}
-
 .container {
   margin: 0px auto;
 }
@@ -117,15 +110,12 @@ a {
   padding-bottom: 30px;
 }
 
-@media (min-width: 767px) {
-  .px-sm-122 {
-    padding-left: 122px;
-    padding-right: 122px;
-  }
+.bg_primary {
+  background-color: #3F5D45;
 }
 
-.bg_primary {
-  background-color: var(--primary);
+.bg_secondary {
+  background-color: #EAF0ED;
 }
 
 .header_container {
@@ -156,6 +146,7 @@ a {
 
 #navbarBtn:checked ~ .header_nav {
   display: block;
+  z-index: 1;
 }
 
 .navbarStyle {
@@ -168,7 +159,7 @@ a {
   position: absolute;
   width: 75%;
   height: 2px;
-  background-color: var(--primary);
+  background-color: #3F5D45;
   top: 0;
   left: 0;
   right: 0;
@@ -180,7 +171,7 @@ a {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: var(--primary);
+  background-color: #3F5D45;
   top: 4px;
 }
 .navbarStyle__line::after {
@@ -188,7 +179,7 @@ a {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: var(--primary);
+  background-color: #3F5D45;
   top: -4px;
 }
 @media (min-width: 767px) {
@@ -198,17 +189,21 @@ a {
 }
 
 .header_nav {
+  transition: 0.7s;
   display: none;
   position: absolute;
   top: 100%;
   width: calc(100% - 60px);
-  z-index: 1;
-  background-color: var(--secondary);
+  background-color: #EAF0ED;
+  padding: 12px 0px;
 }
 .header_nav .header_navlist__item a {
   display: inline-block;
   font-weight: 600;
-  color: var(--primary);
+  color: #3F5D45;
+}
+.header_nav .header_navlist__item:nth-child(2) {
+  margin: 12px 0px;
 }
 @media (min-width: 767px) {
   .header_nav {
@@ -217,8 +212,9 @@ a {
     z-index: 0;
     width: -moz-fit-content;
     width: fit-content;
-    background-color: var(--white);
+    background-color: #FFFFFF;
     margin-left: auto;
+    padding: 0px;
   }
   .header_nav > .header_navlist {
     display: flex;
@@ -229,21 +225,25 @@ a {
   .header_nav .header_navlist__item:last-child > a {
     margin-right: 80px;
   }
+  .header_nav .header_navlist__item:nth-child(2) {
+    margin: 0px;
+  }
 }
 
 .footer_subscribe {
   display: flex;
   flex-direction: column;
+  gap: 30px;
 }
-.footer_subscribe > .footer_title {
+.footer_subscribe__title {
   align-self: center;
   display: flex;
   align-items: center;
   font-size: 24px;
   font-weight: 500;
-  color: var(--white);
+  color: #FFFFFF;
 }
-.footer_subscribe > .footer_title > img {
+.footer_subscribe__title > img {
   width: 40px;
   height: 40px;
   margin-right: 20px;
@@ -270,17 +270,82 @@ a {
 .footer_subscribe .footer_form__button {
   border: none;
   padding: 16px 20px;
-  background-color: var(--btn_color);
+  background-color: #FFE180;
+}
+.footer_subscribe .footer_form__button:hover {
+  cursor: pointer;
 }
 @media (min-width: 767px) {
   .footer_subscribe {
     flex-direction: row;
-    justify-content: space-around;
-  }
-  .footer_subscribe > .footer_title {
-    width: 33%;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
   }
   .footer_subscribe > .footer_form {
     width: 42%;
+  }
+}
+
+.footer_info_logo {
+  height: 26.6px;
+}
+
+.footer_icon {
+  width: 32px;
+  height: 32px;
+}
+
+.footer_info {
+  display: flex;
+  flex-wrap: wrap;
+  color: #3F5D45;
+}
+.footer_info__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer_info__list li:first-child {
+  margin-bottom: 40px;
+}
+.footer_info__list li {
+  font-weight: 500;
+}
+.footer_info__slogan {
+  display: none;
+}
+.footer_info__copyright {
+  width: 100%;
+  margin-top: 30px;
+}
+.footer_info__copyright > ul {
+  display: flex;
+  margin-bottom: 23px;
+}
+.footer_info__copyright > ul > li:first-child {
+  margin-right: 8px;
+}
+@media (min-width: 767px) {
+  .footer_info {
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: space-between;
+  }
+  .footer_info__list > li:nth-child(2) {
+    margin-top: auto;
+  }
+  .footer_info__slogan {
+    display: block;
+  }
+  .footer_info__slogan > img {
+    width: 59px;
+  }
+  .footer_info__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer_info__copyright > ul {
+    margin-bottom: 0px;
   }
 }/*# sourceMappingURL=all.css.map */

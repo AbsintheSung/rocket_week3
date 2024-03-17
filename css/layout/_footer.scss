@@ -1,14 +1,16 @@
 
+// footer 上半部
 .footer_subscribe{
     display: flex;
     flex-direction: column;
-    >.footer_title{
+    gap:30px;
+    &__title{
         align-self: center;
         display: flex;
         align-items: center;
         font-size: 24px;
         font-weight: 500;
-        color:var(--white);
+        color:$white;
         >img{
             width: 40px;
             height: 40px;
@@ -39,19 +41,108 @@
         &__button{
             border:none;
             padding: 16px 20px;
-            background-color: var(--btn_color);
+            background-color: $btn_color;
+        }
+        &__button:hover{
+            cursor: pointer;
         }
     }
     @include Medium{
         flex-direction: row;
-        justify-content: space-around;
-        >.footer_title{
-            width: 33%;
-            // margin-right: 62px
-        };
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 80px;
+        // >.footer_title{
+        //     width: 33%;
+        //     // margin-right: 62px
+        // };
+        &__title{
+            // width: 33%;
+            // width: 42%;
+        }
         >.footer_form{
             width: 42%;
             // margin-left: 62px
+        }
+    }
+}
+
+
+// footer 下半部
+.footer_info_logo{
+    height: 26.6px;
+}
+.footer_icon{
+    width: 32px;
+    height: 32px;
+}
+.footer_info{
+    display: flex;
+    flex-wrap: wrap;
+    color:$primary;
+    &__list{
+       display: flex;
+       flex-direction: column;
+       li:first-child{
+        margin-bottom: 40px;
+       }
+       li{
+        font-weight: 500;
+       }
+    }
+    &__slogan{
+        display: none;
+        
+        // >p{
+        //     font-size: 24px;
+        //     font-weight: bold;
+        //     color:var(--primary)
+        // }
+        // >p:last-child{
+        //     padding-top: 10px;
+        // }
+    }
+    &__copyright{
+        width: 100%;
+        margin-top: 30px;
+        >ul{
+            display: flex;
+            margin-bottom: 23px;
+            >li:first-child{
+                margin-right: 8px;
+            }
+        }
+
+    }
+    @include Medium{
+        padding-left: 80px;
+        padding-right: 80px;
+        justify-content:space-between;
+        &__list{
+            >li:nth-child(2){
+                margin-top: auto;
+            }
+        }
+        &__slogan{
+            
+            // display: flex;
+            // flex-direction: column;
+            // -webkit-writing-mode: vertical-rl;
+            // writing-mode: vertical-rl;
+            // letter-spacing: 5px; /* 設置 5px 間距 */
+            display: block;
+            >img{
+                width: 59px;
+            }
+
+        }
+        &__copyright{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >ul{
+                margin-bottom: 0px;
+            }
         }
     }
 }
