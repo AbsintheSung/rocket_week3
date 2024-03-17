@@ -12,7 +12,8 @@
             width: 100%;
             height: 24px;
             @include Medium{
-                content: url("../../assets/img/logo-all-dark.svg");
+                // content: url("../../assets/img/logo-all-dark.svg");
+                content: url('https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/logo-all-dark.svg');
                 height: 40px;
             }
         }

@@ -145,7 +145,7 @@ a {
 }
 @media (min-width: 767px) {
   .header__title > a > img {
-    content: url("../../assets/img/logo-all-dark.svg");
+    content: url("https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/logo-all-dark.svg");
     height: 40px;
   }
 }
@@ -453,7 +453,7 @@ a {
     row-gap: 80px;
   }
   .home_introduce > img {
-    content: url("../../assets/img/home_ds_title3.svg");
+    content: url("https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/home_ds_title3.svg");
     height: 328px;
     margin: 95px auto 80px auto;
   }
