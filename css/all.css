@@ -565,6 +565,10 @@ a {
     height: 307px;
     margin-top: -85px;
     align-self: start;
+    flex: 1;
+  }
+  .introduce__listItem__content > p {
+    flex: 1;
   }
 }
 

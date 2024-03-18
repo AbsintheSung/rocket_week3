@@ -171,6 +171,10 @@
                 height: 307px;
                 margin-top: -85px;
                 align-self: start;
+                flex:1;
+            }
+            >p{
+                flex:1
             }
         }
     }
