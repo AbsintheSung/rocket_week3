@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
-
+    
+    <!-- header -->
     <header class="container-fluid">
         <div class="container  header_container">
             <input type="checkbox" id="navbarBtn" >
             <label for="navbarBtn" class="navbarStyle"><div class="navbarStyle__line"></div></label>
     
             <h1 class="header__title">
-                <a href=""><img src="https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/logotype-sm-dark.svg"></img></a>
+                <a href=""><img src="./assets/img/logotype-sm-dark.svg"></img></a>
             </h1>
     
             <nav class="header_nav">
@@ -29,61 +30,43 @@
         </div>   
     </header>
 
+    <main class="container-fluids product_main">
 
-    
-    <main class="container-fluid">
-
-        <section class="container home_category">
-            <div class="home_category__bg">
-                <!-- <img src="https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=2725&q=80"> -->
+        <section class="container product_header">
+            
+            <div class="product_header_bg">
+                <img src="./assets/img/home_ds_title3.svg">
             </div>
-            <ul class="home_category__list">
-                <li><a href="#">本日精選</a></li>
-                <li><a href="#">人氣推薦</a></li>
-                <li><a href="#">新品上市</a></li>
-            </ul>
+            
         </section>
 
-        <section class="home_introduce container-fluid">
-            <ul>
-                <li class="container-fluid home_introduce__list">
-                    <div class="container introduce__listItem">
-                        <div class="introduce__listItem__imgcontent">
-                            <img alt="首頁商品介紹標語" src="./assets/img/home_sm_title1.svg">
-                            <img alt="首頁商品介紹圖片" src="https://images.unsplash.com/photo-1519730722595-a5ff788dea4d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2712a33fe9b13532f0682ac4e1e749b8&auto=format&fit=crop&w=600&q=60">
-                        </div>
-                        <div class="introduce__listItem__content">
-                            <img alt="首頁商品介紹標語" src="./assets/img/home_ds_title1.svg">
-                            <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p><br>
-                            <p>是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-                        </div>
+      
+
+        <section class="container product_body">
+            <aside class="product_aside">
+                <h2>甜點類別</h2>
+                <ul class="product_aside__list">
+                    <li><a href="#">所有甜點&ensp;(48)</a></li>
+                    <li><a href="#">本日精選&ensp;(10)</a></li>
+                    <li><a href="#">人氣推薦&ensp;(26)</a></li>
+                    <li><a href="#">新品上市&ensp;(12)</a></li>
+                </ul>
+            </aside>
+            <ul class="product_cardList">
+                <li class="cardItem">
+                    <div class="card_header">
+                        <img src="./assets/img/p-1.png">
+                    </div>
+                    <div class="card_body">
+                        <p>焦糖瑪卡龍</p>
+                        <p>NT$&nbsp;450</p>
+                    </div>
+                    <div class="card_footer">
+                        <button>加入購物車</button>
                     </div>
                   
                 </li>
 
-                <li class="container-fluid home_introduce__list">
-                    <div class="container introduce__listItem">
-                       
-                        <div class="introduce__listItem__imgcontent">
-                            <img alt="首頁商品介紹標語" src="./assets/img/home_sm_title2.svg">
-                            <img alt="首頁商品介紹圖片" src="https://images.unsplash.com/photo-1501432781167-c0ccfd492297?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=621c4e9986fba1c4514dfdc30e095bd2&auto=format&fit=crop&w=600&q=60">
-                        </div>
-                        <div class="introduce__listItem__content">
-                            <img alt="首頁商品介紹標語" src="./assets/img/home_ds_title2.svg">
-                            <p>青山依舊在，幾度夕陽紅。慣看秋月春風。一壺濁酒喜相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。</p><br>
-                            <p>是非成敗轉頭空，青山依舊在，幾度夕陽紅。白髮漁樵江渚上，古今多少事，都付笑談中。</p>
-                        </div>
-                      
-                    </div>
-                  
-                </li>
-            </ul>
-            <img alt="首頁商品介紹標語" src="https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/home_sm_title3.svg">
-        </section>
-
-        <section class="home_cardInfo">
-
-            <ul class="container home_cardlist">
                 <li class="cardItem">
                     <div class="card_header">
                         <img src="./assets/img/p-2.png">
@@ -97,6 +80,35 @@
                     </div>
                   
                 </li>
+
+                <li class="cardItem">
+                    <div class="card_header">
+                        <img src="./assets/img/p-3.png">
+                    </div>
+                    <div class="card_body">
+                        <p>焦糖瑪卡龍</p>
+                        <p>NT$&nbsp;450</p>
+                    </div>
+                    <div class="card_footer">
+                        <button>加入購物車</button>
+                    </div>
+                  
+                </li>
+
+                <li class="cardItem">
+                    <div class="card_header">
+                        <img src="./assets/img/p-4.png">
+                    </div>
+                    <div class="card_body">
+                        <p>焦糖瑪卡龍</p>
+                        <p>NT$&nbsp;450</p>
+                    </div>
+                    <div class="card_footer">
+                        <button>加入購物車</button>
+                    </div>
+                  
+                </li>
+
                 <li class="cardItem">
                     <div class="card_header">
                         <img src="./assets/img/p-5.png">
@@ -110,10 +122,10 @@
                     </div>
                   
                 </li>
-                
+
                 <li class="cardItem">
                     <div class="card_header">
-                        <img src="https://images.unsplash.com/photo-1504473089979-b1c4993a9653?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9db69b72e1f7d1b4e5c81cee531108ff&auto=format&fit=crop&w=700&q=60">
+                        <img src="./assets/img/p-6.png">
                     </div>
                     <div class="card_body">
                         <p>焦糖瑪卡龍</p>
@@ -125,13 +137,21 @@
                   
                 </li>
             </ul>
+        </section>
 
+        <section class="container product_footer">
+            <ul class="product_pagesBtn">
+                <li><a href="#"><img alt="arrow_left" src="./assets/img/arrow_left.png"></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#"><img alt="arrow_right" src="./assets/img/arrow_right.png"></a></li>
+            </ul>
         </section>
 
     </main>
 
-
-
+    <!-- footer -->
     <footer class="container-fluid">
 
         <div class="bg_primary">
