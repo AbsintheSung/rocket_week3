@@ -173,6 +173,11 @@ a {
   color: #3F5D45;
   background-color: #EAF0ED;
 }
+.cardItem > .card_footer > button:hover {
+  cursor: pointer;
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
 @media (min-width: 767px) {
   .cardItem > .card_header > img {
     height: 315px;

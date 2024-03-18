@@ -38,6 +38,11 @@
             color:$primary;
             background-color: $secondary;
         }
+        >button:hover{
+            cursor: pointer;
+            background-color: $primary;
+            color:$secondary;
+        }
     }
     @include Medium{
         >.card_header{
