@@ -14,9 +14,15 @@
 //當 內容不足以 撐高到 使用者裝置 高度的時候，解決footer 無法置底問題，在最外層 加上新的div 並給予此class
 .pg_test{
     display: flex;
-    height: 100dvh;
+   
     flex-direction: column;
-    >footer{
-        margin-top: auto;
+    // >footer{
+    //     margin-top: auto;
+    // }
+    @include Small{
+        height: 100dvh;
+        >footer{
+            margin-top: auto;
+        }
     }
 }

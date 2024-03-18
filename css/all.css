@@ -123,11 +123,15 @@ a {
 
 .pg_test {
   display: flex;
-  height: 100dvh;
   flex-direction: column;
 }
-.pg_test > footer {
-  margin-top: auto;
+@media (min-width: 575px) {
+  .pg_test {
+    height: 100dvh;
+  }
+  .pg_test > footer {
+    margin-top: auto;
+  }
 }
 
 .bg_primary {
@@ -300,6 +304,7 @@ a {
 }
 
 .footer_subscribe {
+  padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -332,6 +337,7 @@ a {
   border: none;
   padding: 16px 0px;
   padding-left: 50px;
+  color: #3F5D45;
 }
 .footer_subscribe .footer_form__input:focus {
   outline: none;
@@ -366,6 +372,7 @@ a {
 }
 
 .footer_info {
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
   color: #3F5D45;
@@ -794,8 +801,35 @@ a {
   padding-left: 0px;
   padding-right: 0px;
 }
+.login_container .login_link {
+  display: none;
+}
+.login_container .login_link__view {
+  background-color: #EAF0ED;
+}
+@media (min-width: 575px) {
+  .login_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+  }
+  .login_container > .login_view {
+    width: 42%;
+  }
+  .login_container > .login_view > .pad_loginlink {
+    display: none;
+  }
+  .login_container > .login_view > .login_title {
+    padding-bottom: 10px;
+  }
+  .login_container .login_link {
+    width: 42%;
+    display: inline-block;
+    padding: 15px 0px 15px 0px;
+  }
+}
 
-.login_view > h2 {
+.login_title {
   font-size: 36px;
   font-weight: 600;
   text-align: center;
@@ -848,6 +882,7 @@ a {
   width: 100%;
   padding: 16px 20px;
   background-color: #EAF0ED;
+  color: #3F5D45;
 }
 .login_formInfo__password {
   margin-bottom: 16px;
@@ -856,4 +891,52 @@ a {
   width: 100%;
   padding: 16px 20px;
   background-color: #EAF0ED;
+  color: #3F5D45;
+}
+.login_formInfo__checkbox {
+  display: flex;
+  align-items: center;
+}
+.login_formInfo__checkbox > input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.login_formInfo__checkbox > label {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.login_link__view {
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 100%;
+}
+.login_link__view > h2 {
+  color: #8DA291;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 40px;
+}
+@media (min-width: 767px) {
+  .login_link__view > h2 {
+    font-size: 24px;
+  }
+}
+
+.desk_loginlink {
+  margin-top: 36px;
+}
+.desk_loginlink > li {
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
+}
+.desk_loginlink > li > a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 16px 0px;
+}
+.desk_loginlink > li > a img {
+  height: 20px;
 }/*# sourceMappingURL=all.css.map */
