@@ -1,0 +1,49 @@
+.cardItem{
+    >.card_header{
+        >img{
+            width: 100%;
+            height: 312px;
+        }
+    }
+    >.card_body{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        >p{
+           
+            padding: 16px 0px;
+            text-align: center;
+            color: $primary;
+        }
+        >p:first-child{
+            width: 57.5%;
+            border-left: 1px solid #EAF0ED;
+            border-right: 1px solid #EAF0ED;
+        }
+        >p:last-child{
+            width: 42.5%;
+            font-weight: 600 ;
+            border-right: 1px solid #EAF0ED;
+        }   
+    }
+    >.card_footer{
+        >button{
+            width: 100%;
+            border: none;
+            display: block;
+            text-align: center;
+            padding: 16px 0px;
+            font-size: 24px;
+            font-weight: 600;
+            color:$primary;
+            background-color: $secondary;
+        }
+    }
+    @include Medium{
+        >.card_header{
+            >img{
+                height: 315px;
+            }
+        }
+    }
+}
