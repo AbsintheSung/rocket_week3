@@ -170,6 +170,13 @@
             background-color: $primary;
         }
     }
+    li:first-child:hover,
+    li:last-child:hover{
+        >a{
+            background-color: $secondary; 
+        }
+    }
+
     @include Small{
         justify-content: end;
     }

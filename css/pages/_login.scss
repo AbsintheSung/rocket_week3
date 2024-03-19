@@ -59,6 +59,40 @@
 }
 .login_form{
     background-color: $primary;
+    .login_formInfo{
+        padding: 30px;
+        &__account{
+            margin-bottom: 16px;
+            >input{
+                width: 100%;
+                padding: 16px 20px;
+                background-color: $secondary;
+                color: $primary;
+            }
+        }
+        &__password{
+            margin-bottom: 16px;
+            >input{
+                width: 100%;
+                padding: 16px 20px;
+                background-color: $secondary;
+                color: $primary;
+            }
+        }
+        &__checkbox{
+            display: flex;
+            align-items: center;
+            >input{
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+            }
+            >label{
+                color: $white;
+                font-weight: 600;
+            }
+        }
+    }
     >button{
         border: none;
         width: 100%;
@@ -69,41 +103,45 @@
         color: $primary;
         background-color: $btn_color;
     }
-}
-.login_formInfo{
-    padding: 30px;
-    &__account{
-        margin-bottom: 16px;
-        >input{
-            width: 100%;
-            padding: 16px 20px;
-            background-color: $secondary;
-            color: $primary;
-        }
-    }
-    &__password{
-        margin-bottom: 16px;
-        >input{
-            width: 100%;
-            padding: 16px 20px;
-            background-color: $secondary;
-            color: $primary;
-        }
-    }
-    &__checkbox{
-        display: flex;
-        align-items: center;
-        >input{
-            width: 16px;
-            height: 16px;
-            margin-right: 8px;
-        }
-        >label{
-            color: $white;
-            font-weight: 600;
-        }
+    >button:hover{
+        color: $secondary;
+        cursor: pointer;
     }
 }
+// .login_formInfo{
+//     padding: 30px;
+//     &__account{
+//         margin-bottom: 16px;
+//         >input{
+//             width: 100%;
+//             padding: 16px 20px;
+//             background-color: $secondary;
+//             color: $primary;
+//         }
+//     }
+//     &__password{
+//         margin-bottom: 16px;
+//         >input{
+//             width: 100%;
+//             padding: 16px 20px;
+//             background-color: $secondary;
+//             color: $primary;
+//         }
+//     }
+//     &__checkbox{
+//         display: flex;
+//         align-items: center;
+//         >input{
+//             width: 16px;
+//             height: 16px;
+//             margin-right: 8px;
+//         }
+//         >label{
+//             color: $white;
+//             font-weight: 600;
+//         }
+//     }
+// }
 
 .desk_link{
     &__view{
@@ -130,6 +168,11 @@
                 img{
                     height: 20px;
                 }
+            }
+        }
+        >li:hover{
+            >a{
+                background-color: $btn-color;
             }
         }
         

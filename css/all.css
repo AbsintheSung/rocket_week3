@@ -220,6 +220,9 @@ a {
   background-color: transparent;
   border: none;
 }
+.card_special p:hover {
+  cursor: default;
+}
 
 .header_container {
   position: relative;
@@ -824,6 +827,10 @@ a {
   color: #FFFFFF;
   background-color: #3F5D45;
 }
+.product_pagesBtn li:first-child:hover > a,
+.product_pagesBtn li:last-child:hover > a {
+  background-color: #EAF0ED;
+}
 @media (min-width: 575px) {
   .product_pagesBtn {
     justify-content: end;
@@ -894,6 +901,40 @@ a {
 .login_form {
   background-color: #3F5D45;
 }
+.login_form .login_formInfo {
+  padding: 30px;
+}
+.login_form .login_formInfo__account {
+  margin-bottom: 16px;
+}
+.login_form .login_formInfo__account > input {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+.login_form .login_formInfo__password {
+  margin-bottom: 16px;
+}
+.login_form .login_formInfo__password > input {
+  width: 100%;
+  padding: 16px 20px;
+  background-color: #EAF0ED;
+  color: #3F5D45;
+}
+.login_form .login_formInfo__checkbox {
+  display: flex;
+  align-items: center;
+}
+.login_form .login_formInfo__checkbox > input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.login_form .login_formInfo__checkbox > label {
+  color: #FFFFFF;
+  font-weight: 600;
+}
 .login_form > button {
   border: none;
   width: 100%;
@@ -904,40 +945,9 @@ a {
   color: #3F5D45;
   background-color: #FFE180;
 }
-
-.login_formInfo {
-  padding: 30px;
-}
-.login_formInfo__account {
-  margin-bottom: 16px;
-}
-.login_formInfo__account > input {
-  width: 100%;
-  padding: 16px 20px;
-  background-color: #EAF0ED;
-  color: #3F5D45;
-}
-.login_formInfo__password {
-  margin-bottom: 16px;
-}
-.login_formInfo__password > input {
-  width: 100%;
-  padding: 16px 20px;
-  background-color: #EAF0ED;
-  color: #3F5D45;
-}
-.login_formInfo__checkbox {
-  display: flex;
-  align-items: center;
-}
-.login_formInfo__checkbox > input {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-.login_formInfo__checkbox > label {
-  color: #FFFFFF;
-  font-weight: 600;
+.login_form > button:hover {
+  color: #EAF0ED;
+  cursor: pointer;
 }
 
 .desk_link__view {
@@ -966,6 +976,9 @@ a {
 }
 .desk_link__list > li > a img {
   height: 20px;
+}
+.desk_link__list > li:hover > a {
+  background-color: #FFE180;
 }
 @media (min-width: 767px) {
   .desk_link__view > h2 {
