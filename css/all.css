@@ -121,15 +121,18 @@ a {
   padding-bottom: 30px;
 }
 
-.pg_test {
+.footer_Send_to_back {
   display: flex;
   flex-direction: column;
 }
+.footer_Send_to_back main {
+  width: 100%;
+}
 @media (min-width: 575px) {
-  .pg_test {
+  .footer_Send_to_back {
     height: 100dvh;
   }
-  .pg_test > footer {
+  .footer_Send_to_back > footer {
     margin-top: auto;
   }
 }
@@ -1146,7 +1149,7 @@ a {
   padding: 16px 0px;
   display: block;
   width: 100%;
-  border: none;
+  border: transparent;
   font-size: 24px;
   font-weight: 600;
   color: #3F5D45;
