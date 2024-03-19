@@ -976,6 +976,7 @@ a {
   flex-wrap: wrap;
   -moz-column-gap: 1%;
        column-gap: 1%;
+  row-gap: 0px;
 }
 .cart_main .cart_item {
   width: 100%;
