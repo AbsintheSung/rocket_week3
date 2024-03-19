@@ -196,7 +196,7 @@
     button:hover{
         cursor: pointer;
     }
-    @include Medium{
+    @include Large{
         // padding: 0px 18px;
        
         &__content{
@@ -227,7 +227,7 @@
         font-size: 20px;
         font-weight: 600;
     }
-    @include Medium{
+    @include Large{
         // padding: 16px 23px 16px 18px;
         border-top: 1px solid  $secondary;
         &__item{
