@@ -98,6 +98,12 @@
             >button{
                 background-color: transparent;
                 border: 1px solid $secondary;
+                
+            }
+            >button:hover{
+                cursor: pointer;
+                color: $secondary;
+                background-color: $primary;
             }
             >p{
                 border-top: 1px solid $secondary;
@@ -131,6 +137,15 @@
             height: 24px;
             border: none;
             background-color: transparent;
+            cursor: pointer;
+            >span{
+                color: $primary;
+            }
+        }
+        >button:hover{
+            >span{
+                color: red;
+            }
         }
     }
 
@@ -154,15 +169,7 @@
         &__footer{
             border: none;
             width: fit-content;
-            >button{
-               
-                >span{
-                    color: $primary;
-                }
-            }
-            >button:hover{
-                cursor: pointer;
-            }
+      
         }
     }
 }
@@ -195,6 +202,7 @@
     }
     button:hover{
         cursor: pointer;
+        color: $secondary;
     }
     @include Large{
         // padding: 0px 18px;
