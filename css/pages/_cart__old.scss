@@ -1,0 +1,255 @@
+.cart_main{
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: calc(100% - 66% - 33%);
+    row-gap: 0px;
+    .cart_item{
+        width: 100%;
+        >.cartList{
+            padding:30px ;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .cart_detail{
+        width: 100%;
+    }
+    @include Medium{
+        padding: 30px 12px;
+        // padding-left: 12px;
+        // padding-right: 12px;
+        .cart_item{
+            width: 66%;
+            >.cartList{
+                padding: 30px 0px;
+            }
+        }
+        .cart_detail{
+            width: 33%;
+        }
+    }
+    @include Large{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+    @include XLarge{
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+}
+
+
+.cart_item{
+    >.cart_title{
+        padding: 16px 0px;
+        font-size: 24px;
+        font-weight: 600;
+        color: $primary;
+        text-align: center;
+        background-color: $secondary;
+    }
+}
+.cartListItem{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    margin-bottom: 30px;
+    &__header{
+        img{
+            width: 157px;
+            height: 106px;
+        }
+
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: calc(100% - 157px - 16px);
+        &__content{
+            color:$primary;
+            margin-left: auto;
+            .content_text{
+                >p:first-child{
+                    font-size: 20px;
+                }
+                >p:last-child{
+                    font-size: 16px;
+                }
+            }
+            >.contentBtn{
+                margin-top: auto;
+                display: flex;
+                >*{
+                    width: 48px;
+                    height: 48px;
+                    background-color: transparent;
+                    border: none;
+                }
+                >button{
+                    border: 1px solid $secondary;
+                }
+                >p{
+                    border-top: 1px solid $secondary;
+                    border-bottom: 1px solid $secondary;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        // &__button{
+        //     margin-top: auto;
+        //     display: flex;
+        //     >*{
+        //         width: 48px;
+        //         height: 48px;
+        //         background-color: transparent;
+        //         border: none;
+        //     }
+        //     >button{
+        //         border: 1px solid $secondary;
+        //     }
+        //     >p{
+        //         border-top: 1px solid $secondary;
+        //         border-bottom: 1px solid $secondary;
+        //         display: flex;
+        //         justify-content: center;
+        //         align-items: center;
+        //     }
+            
+        // }
+
+    }
+    &__footer{
+        width: 100%;
+        margin-top: 8.5px;
+        padding:8.5px 0px;
+        border-top: 1px solid $secondary;
+        border-bottom: 1px solid $secondary;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        >p{
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary;
+        }
+        >button{
+            display: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    @include Medium{
+        flex-wrap: nowrap;
+        align-items: center;
+        gap:calc(100% - 55% - 25% - 110px);
+        margin-bottom: 0px;
+        padding: 20px 0px;
+        border-bottom: 1px solid $secondary;
+        &__header{
+            width: 110px;
+            height: 110px;
+            >img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &__body{
+            width: 55%;
+            flex-direction: row;
+            justify-content: space-around;
+            &__content{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+        &__footer{
+            width: 25%;
+            border: none;
+            justify-content:space-between;
+            >button{
+                display: inline-block;
+            }
+        }
+    }
+}
+.cartListItem:first-child{
+    @include Medium{
+        padding-top: 0px;
+    }
+}
+.cartListItem:last-child{
+    @include Medium{
+        padding-bottom: 0px;
+        border-bottom: none;
+    }
+}
+.cart_detail{
+    &__content{
+        padding: 0px 30px 30px 30px;
+        h2{
+            padding: 16px 0px;
+            font-size: 24px;
+            font-weight: 600;
+            color: $primary;
+            background-color: $secondary;
+            text-align: center;
+        }
+    }
+    button{
+        padding: 16px 0px;
+        display: block;
+        width: 100%;
+        border: none;
+        font-size: 24px;
+        font-weight: 600;
+        color:$primary;
+        background-color: $btn-color;
+        cursor: pointer;
+    }
+    @include Medium{
+        // padding: 0px 18px;
+       
+        &__content{
+            // padding: 0px;
+            padding: 0px 20px 16px 20px;
+            background-color: $primary;
+            h2{
+                background-color: $primary;
+                color: $secondary;
+            }
+        }
+        
+    }
+}
+.detailList{
+    padding: 16px 0px;
+    &__item{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $primary;
+        font-weight: 300;
+    }
+    &__item:nth-child(2){
+        padding: 8px 0px 16px;
+    }
+    &__item:last-child{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    @include Medium{
+        // padding: 16px 23px 16px 18px;
+        border-top: 1px solid  $secondary;
+        &__item{
+            color: $secondary;
+        }
+    }
+}
