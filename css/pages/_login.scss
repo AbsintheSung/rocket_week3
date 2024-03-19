@@ -1,7 +1,7 @@
 .login_container{
     padding-left: 0px;
     padding-right: 0px;
-    .login_link{
+    .desk_link{
         display: none;
         &__view{
             background-color: $secondary;
@@ -13,14 +13,14 @@
         padding-top: 60px;
         >.login_view{
             width: 42%;
-            >.pad_loginlink{
+            >.pad_linkview{
                 display: none;
             }
             >.login_title{
                 padding-bottom: 10px;
             }
         }
-        .login_link{
+        .desk_link{
             width: 42%;
             display: inline-block;
             padding: 15px 0px 15px 0px;
@@ -39,7 +39,7 @@
     background-color: $primary;
 
 }
-.pad_loginlink{
+.pad_linkview{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,36 +104,74 @@
         }
     }
 }
-.login_link__view{
-    padding-left: 30px;
-    padding-right: 30px;
-    height: 100%;
-    >h2{
-        color: $primary-light;
-        font-size: 16px;
-        text-align: center;
-        padding-top: 40px;
-    }
-    @include Medium{
+
+.desk_link{
+    &__view{
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 100%;
         >h2{
-            font-size: 24px;
+            color: $primary-light;
+            font-size: 16px;
+            text-align: center;
+            padding-top: 40px;
         }
     }
-}
-.desk_loginlink{
-    margin-top: 36px;
-    >li{
-        background-color: $white;
-        margin-bottom: 16px;
-        >a{
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: 16px 0px;
-            img{
-                height: 20px;
+    &__list{
+        margin-top: 36px;
+        >li{
+            background-color: $white;
+            margin-bottom: 16px;
+            >a{
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 16px 0px;
+                img{
+                    height: 20px;
+                }
+            }
+        }
+        
+    }
+    @include Medium{
+        &__view{
+            >h2{
+                font-size: 24px; 
             }
         }
     }
 }
+// .desk_link__view{
+//     padding-left: 30px;
+//     padding-right: 30px;
+//     height: 100%;
+//     >h2{
+//         color: $primary-light;
+//         font-size: 16px;
+//         text-align: center;
+//         padding-top: 40px;
+//     }
+//     @include Medium{
+//         >h2{
+//             font-size: 24px;
+//         }
+//     }
+// }
+// .desk_link__list{
+//     margin-top: 36px;
+//     >li{
+//         background-color: $white;
+//         margin-bottom: 16px;
+//         >a{
+//             display: block;
+//             width: 100%;
+//             text-align: center;
+//             padding: 16px 0px;
+//             img{
+//                 height: 20px;
+//             }
+//         }
+//     }
+// }
 
