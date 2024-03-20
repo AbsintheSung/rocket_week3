@@ -1090,6 +1090,7 @@ a {
 .cartListItem__body__btn > button {
   background-color: transparent;
   border: 1px solid #EAF0ED;
+  color: #3F5D45;
 }
 .cartListItem__body__btn > button:hover {
   cursor: pointer;

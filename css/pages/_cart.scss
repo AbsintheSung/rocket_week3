@@ -91,6 +91,7 @@
         &__btn{
             margin-top: auto;
             display: flex;
+          
             *{
                 width: 48px;
                 height: 48px;
@@ -98,7 +99,7 @@
             >button{
                 background-color: transparent;
                 border: 1px solid $secondary;
-                
+                color:$primary;      
             }
             >button:hover{
                 cursor: pointer;
