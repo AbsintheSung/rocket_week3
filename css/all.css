@@ -1281,11 +1281,11 @@ a {
 
 .transport_container {
   display: flex;
+  justify-content: center;
   padding: 0px;
 }
 .transport_container .transport_formContent {
   width: 100%;
-  padding: 30px;
   background-color: #3F5D45;
 }
 .transport_container .transport_detail {
@@ -1304,11 +1304,12 @@ a {
   }
   .transport_container .transport_formContent {
     width: 50%;
-    padding: 30px 40px;
   }
   .transport_container .transport_detail {
     width: 33%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
 @media (min-width: 992px) {
@@ -1328,17 +1329,24 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 30px 30px 0px;
 }
 .formContent_title h2 {
   font-size: 36px;
   font-weight: 600;
   color: #EAF0ED;
 }
+@media (min-width: 767px) {
+  .formContent_title {
+    padding: 30px 40px 0px;
+  }
+}
 
 .transportForm {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+  padding: 30px;
 }
 .transportForm__userName {
   display: flex;
@@ -1409,7 +1417,94 @@ a {
   border: none;
   border-radius: 0px;
 }
+@media (min-width: 767px) {
+  .transportForm {
+    padding: 30px 40px;
+  }
+}
 
 .transoirtForm_button {
   width: 100%;
+  padding: 20px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  background-color: #FFE180;
+  color: #3F5D45;
+}
+
+.transport_detail {
+  height: 100%;
+}
+.transport_detail__amount {
+  flex: 1;
+  border: 1px solid #EAF0ED;
+}
+.transport_detail__amount > h2 {
+  padding: 16px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #EAF0ED;
+  color: #8DA291;
+  text-align: center;
+}
+.transport_detail__amount > ul {
+  padding: 16px 20px;
+}
+.transport_detail__amount > ul > li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8DA291;
+}
+.transport_detail__amount > ul > li:nth-child(2) {
+  margin: 8px 0px 16px;
+}
+.transport_detail__amount > ul > li:last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+.transport_detail__item {
+  flex: 1;
+  border: 1px solid #EAF0ED;
+  height: 100%;
+}
+.transport_detail__item > h2 {
+  padding: 16px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  background-color: #EAF0ED;
+  color: #8DA291;
+  text-align: center;
+}
+
+.transport_detailList {
+  padding: 20px;
+}
+.transport_detailList .transport_detailListItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.transport_detailList .transport_detailListItem > .transport_detailContent {
+  color: #3F5D45;
+}
+.transport_detailList .transport_detailListItem > .transport_detailContent > p:first-child {
+  font-weight: 300;
+}
+.transport_detailList .transport_detailListItem > .transport_detailContent > p:last-child {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media (min-width: 767px) {
+  .transport_detailList .transport_detailListItem > img {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .transport_detailList .transport_detailListItem > img {
+    height: 80px;
+    width: 120px;
+  }
 }/*# sourceMappingURL=all.css.map */

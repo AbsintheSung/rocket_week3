@@ -1,9 +1,10 @@
 .transport_container{
     display: flex;
+    justify-content: center;
     padding: 0px;
     .transport_formContent{
         width: 100%;
-        padding: 30px;
+        // padding: 30px;
         background-color: $primary;
     }
     .transport_detail{
@@ -17,11 +18,14 @@
         column-gap: 20px;
         .transport_formContent{
             width: 50%;
-            padding:30px 40px;
+            // padding:30px 40px;
         }
         .transport_detail{
             width: 33%;
-            display: block;
+            // height: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
         }
     }
     @include Large{
@@ -40,12 +44,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 30px 30px 0px;
     h2{
         font-size: 36px;
         font-weight: 600;
         color:$secondary;
     }
-    
+    @include Medium{
+        padding: 30px 40px 0px;
+    }
 }
 
 
@@ -53,6 +60,7 @@
     display: flex;
     flex-direction: column;
     row-gap: 16px;
+    padding: 30px;
     &__userName{
         display: flex;
         align-items: center;
@@ -125,8 +133,100 @@
             border-radius: 0px;
         }
     }
+    @include Medium{
+        padding: 30px 40px;
+    }
 }
-
 .transoirtForm_button{
     width: 100%;
+    padding: 20px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    border: none;
+    background-color:$btn-color;
+    color:$primary;
+}
+
+.transport_detail{
+    height: 100%;
+    &__amount{
+        flex: 1;
+        border: 1px solid $secondary;
+        >h2{
+            padding: 16px 0px;
+            font-size: 24px;
+            font-weight: 600;
+            background-color:$secondary ;
+            color:$primary-light;
+            text-align: center;
+        }
+        >ul{
+            padding: 16px 20px;
+            >li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color:$primary-light;
+            }
+            >li:nth-child(2){
+                margin: 8px 0px 16px;
+            }
+            >li:last-child{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    &__item{
+        flex: 1;
+        border: 1px solid $secondary;
+        height: 100%;
+        >h2{
+            padding: 16px 0px;
+            font-size: 24px;
+            font-weight: 600;
+            background-color:$secondary ;
+            color:$primary-light;
+            text-align: center;
+        }
+    }
+}
+.transport_detailList{
+    padding: 20px;
+    .transport_detailListItem{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        // >img{
+        //     height: 80px;
+        //     width: 120px;
+        // }
+        >.transport_detailContent{
+            color:$primary;
+            >p:first-child{
+                font-weight: 300;
+            }
+            >p:last-child{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+       
+    }
+    @include Medium{
+        .transport_detailListItem{
+            >img{
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+    @include Large{
+       .transport_detailListItem{
+            >img{
+                height: 80px;
+                width: 120px;
+            }
+        }
+    }
 }
