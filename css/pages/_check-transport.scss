@@ -1,0 +1,132 @@
+.transport_container{
+    display: flex;
+    padding: 0px;
+    .transport_formContent{
+        width: 100%;
+        padding: 30px;
+        background-color: $primary;
+    }
+    .transport_detail{
+        display: none;
+    }
+    @include Small{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @include Medium{
+        column-gap: 20px;
+        .transport_formContent{
+            width: 50%;
+            padding:30px 40px;
+        }
+        .transport_detail{
+            width: 33%;
+            display: block;
+        }
+    }
+    @include Large{
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+
+    @include XLarge{
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+}
+
+
+.formContent_title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2{
+        font-size: 36px;
+        font-weight: 600;
+        color:$secondary;
+    }
+    
+}
+
+
+.transportForm{
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    &__userName{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        &__LastName,
+        &__FirstName{
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            >input[type='text'] {
+                width: 100%;
+                padding: 16px;
+                color: $primary;
+                background-color: $secondary;
+                border: none;
+                border-radius: 0px;
+            }
+            >label{
+                color:$secondary;
+                font-size: 20px;
+                margin-bottom: 8px;
+            }
+        }
+
+        
+    }
+    &__phone{
+        >label{
+            color:$secondary;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        >input[type='tel'] {
+            width: 100%;
+            padding: 16px;
+            color: $primary;
+            background-color: $secondary;
+            border: none;
+            border-radius: 0px;
+        }
+    }
+    &__address{
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        >label{
+            color:$secondary;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+        >.select{
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            .city,.area{
+                width: 100%;
+                padding: 16px;
+                color: $primary;
+                background-color: $secondary;
+                border: none;
+                border-radius: 0px;
+            }
+        }
+        >input[type='text']{
+            width: 100%;
+            padding: 16px;
+            color: $primary;
+            background-color: $secondary;
+            border: none;
+            border-radius: 0px;
+        }
+    }
+}
+
+.transoirtForm_button{
+    width: 100%;
+}
