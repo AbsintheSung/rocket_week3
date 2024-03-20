@@ -7,6 +7,15 @@
     padding-bottom: 30px;
     // background-color: $white;
     // z-index: 2;
+    >a{
+        z-index: 2;
+    }
+    >.navbarStyle{
+        z-index: 2;
+    }
+    .header__title{
+        z-index: 2;
+    }
 }
 
 .header__title{
@@ -30,10 +39,10 @@
    
 }
 #navbarBtn:checked ~.header_nav {
-    display: block;
+    // display: block;
     // opacity: 1;
-    // transform: translateY(0px);
-    // z-index: 1;
+    transform: translateY(0px);
+    // z-index: 0;
 
 }
 .navbarStyle{
@@ -76,8 +85,9 @@
 
 
 .header_nav{
-    display: none;
-    // transform: translateY(-150px);
+    // display: none;
+    transition: .5s;
+    transform: translateY(-150px);
     position: absolute;
     top:100%;
     width: calc(100% - 60px);
@@ -98,9 +108,13 @@
 
 
     @include Medium{
+        transition: 0s;
+        transform: translateY(0px);
+        z-index: 2;
+
         position: relative;
         display: block;
-        z-index: 0;
+ 
         width: fit-content; //寬度 自適應內容
         background-color:$white;
         margin-left: auto;
@@ -132,5 +146,16 @@
     }
     100%{
         transform: translateY(0px);
+    }
+}
+
+.nav_board{
+    position: absolute;
+    width: calc( 100% - 60px );
+    height: 100%;
+    background-color: $white;
+    z-index: 1;
+    @include Medium{
+        display: none;
     }
 }
