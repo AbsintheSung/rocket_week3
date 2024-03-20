@@ -1,0 +1,100 @@
+.statement{
+    display: none;
+    @include Medium{ 
+        width: 33%;
+        // height: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.statement{
+    &__amount{
+
+        border: 1px solid $secondary;
+        >h2{
+            padding: 16px 0px;
+            font-size: 24px;
+            font-weight: 600;
+            background-color:$secondary ;
+            color:$primary-light;
+            text-align: center;
+        }
+        >ul{
+            padding: 16px 20px;
+            >li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                color:$primary-light;
+            }
+            >li:nth-child(2){
+                margin: 8px 0px 16px;
+            }
+            >li:last-child{
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+    &__item{
+    
+        border: 1px solid $secondary;
+        >h2{
+            padding: 16px 0px;
+            font-size: 24px;
+            font-weight: 600;
+            background-color:$secondary ;
+            color:$primary-light;
+            text-align: center;
+        }
+    }
+}
+
+.statementList{
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    @include Large{
+        padding: 20px;
+
+    }
+}
+.statementListItem{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    &__header{
+        width: 40%;
+        >img{
+            height: 80px;
+            width: 100%;
+        }
+    }
+    &__body{
+        width:60%;
+        color: $primary;
+        >.detail_name{
+            font-size: 14px;
+            font-weight: 300;
+        }
+        >.detail_price{
+            font-size: 18px;
+            font-weight: 600;
+        }
+    }
+    @include Large{
+        column-gap: 20px;
+        &__body{
+            width:60%;
+            >.detail_name{
+                font-size: 16px;
+            }
+            >.detail_price{
+                font-size: 20px;
+            }
+        }
+    }
+}

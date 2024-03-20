@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+    
+    <div class="footer_Send_to_back">
+
+        <!-- header -->
+        <header class="container-fluid">
+            <div class="container  header_container">
+                <input type="checkbox" id="navbarBtn" >
+                <label for="navbarBtn" class="navbarStyle"><div class="navbarStyle__line"></div></label>
+        
+                <h1 class="header__title">
+                    <a href="./index.html"><img src="https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/logotype-sm-dark.svg"></img></a>
+                </h1>
+        
+                <nav class="header_nav">
+                    <ul class="header_navlist">
+                        <li class="header_navlist__item"><a href="./index.html">首頁</a></li>
+                        <li class="header_navlist__item"><a href="./product.html">甜點</a></li>
+                        <li class="header_navlist__item"><a href="./login.html">登入</a></li>
+                    </ul>
+                </nav>
+        
+                <a href="./cart.html"><img src="./assets//img/shopping_cart.png"  alt="購物車icon"></img></a>
+            </div>   
+        </header>
+
+        <main class="container transport_container">
+
+            <section class="transport_formContent">
+                <div class="formContent_title">
+                    <h2 class="">運送</h2>
+                    <ul class="timeline">
+                        <li class="timeline__item timeline_show"><a href="#"></a></li>
+                        <li class="timeline__item"><a href="#"></a></li>
+                        <li class="timeline__item"><a href="#"></a></li>
+                    </ul>
+                </div>
+                <form class="transportForm">
+
+                    <div class="transportForm__userName">
+                        <div class="transportForm__userName__LastName">
+                            <label>姓氏</label>
+                            <input type="text">
+                        </div>
+                        <div class="transportForm__userName__FirstName">
+                            <label>名字</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="transportForm__phone">
+                        <label class="ttt">電話</label>
+                        <input type="tel" placeholder="0912-345-678">
+                    </div>
+
+                    <div class="transportForm__address">
+                        <label>地址</label>
+                        <div class="select">
+                            <select class="city">
+                                <option value="none" selected disabled hidden>請選擇</option> 
+                                <option value="台北">台北</option> 
+                                <option value="台中">台中 </option> 
+                                <option value="高雄">高雄</option>  
+                            </select>
+                            <select class="area">
+                                <option value="none" selected disabled hidden>請選擇</option> 
+                                <option value="三民區">三民區</option> 
+                                <option value="苓雅區">苓雅區 </option> 
+                                <option value="鹽埕區">鹽埕區</option> 
+                                <option value="鹽埕區">鹽埕區</option> 
+                            </select>
+                        </div>
+                        <input type="text" placeholder="幸福路 520 號">
+                    </div>
+
+                </form>
+                <button class="transportForm_button">下一步</button>
+            </section>       
+
+            <section class="statement">
+                <div class="statement__amount">
+                    <h2>訂單摘要</h2>
+                    <ul class="">
+                        <li>
+                            <p>小計</p>
+                            <p>NT$ 2,700</p>
+                        </li>
+                        <li>
+                            <p>運費</p>
+                            <p>NT$ 300</p>
+                        </li>
+                        <li>
+                            <p>總計</p>
+                            <p>NT$ 3,000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="statement__item">
+                    <h2>購物清單</h2>
+                    <ul class="statementList">
+
+                        <li class="statementListItem">
+                            <div class="statementListItem__header">
+                                <img alt="購物清單圖片" src="./assets/img/p-3.png">
+                            </div>
+                            
+                            <div class="statementListItem__body">
+                                <p class="detail_name">焦糖馬卡龍（2）</p>
+                                <p class="detail_price">NT$ 900</p>
+                            </div>
+                        </li>
+                        
+                        <li class="statementListItem">
+                            <div class="statementListItem__header">
+                                <img alt="購物清單圖片" src="./assets/img/p-3.png">
+                            </div>
+                            <div class="statementListItem__body">
+                                <p class="detail_name">焦糖馬卡龍（2）</p>
+                                <p class="detail_price">NT$ 900</p>
+                            </div>
+                        </li>
+
+                        <li class="statementListItem">
+                            <div class="statementListItem__header">
+                                <img alt="購物清單圖片" src="./assets/img/p-3.png">
+                            </div>
+                            <div class="statementListItem__body">
+                                <p class="detail_name">焦糖馬卡龍（2）</p>
+                                <p class="detail_price">NT$ 900</p>
+                            </div>
+                        </li>
+
+                    
+
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+
+        <!-- footer -->
+        
+        <footer class="container-fluid">
+
+            <div class="bg_primary">
+
+                <div class="container footer_subscribe ">
+                    <h2 class="footer_subscribe__title"><img alt="logo" src="./assets/img/logo-light.svg">訂閱你我的甜蜜</h2>
+                    <form class="footer_form">
+                        <div class="footer_form__imgbox"><img src="./assets/img/mail-24px.png"></div>
+                        <input type="text" class="footer_form__input">
+                        <button class="footer_form__button"><img alt="按鈕箭頭" src="./assets/img/arrow_forward-24px.png"></button>
+                    </form>
+                </div>
+
+            </div>
+        
+            <div class="bg_secondary">
+
+                <div class="container footer_info ">
+                    
+                    <ul class="footer_info__list">
+                        <li><a href="./index.html"><img class="footer_info_logo" alt="公司logo" src="./assets/img/logotype-sm-dark.svg"></a></li>
+                        <li>07-1234-5678 800</li>
+                        <li>sweetaste@email.com</li>
+                        <li>高雄市新興區幸福路 520 號</li>
+                    </ul>
+                    <div class="footer_info__slogan">
+                        <img alt="標語" src="./assets/img/lg-footer-slogan.svg">
+                        <!-- <p>今天是個</p>
+                        <p>吃甜點的好日子</p> -->
+                    </div>
+                    <div class="footer_info__copyright">
+                        <ul>
+                            <li><a href="#"><img class="footer_icon" alt="line-icon" src="./assets/img/ic-line@.svg"></a></li>
+                            <li><a href="#"><img class="footer_icon" alt="fb-icon" src="./assets/img/ic-facebook.svg"></a></a></li>
+                        </ul>
+                        <span>© 2018 Sweetaste* All Rights Reserved</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+    
+
+    <script>
+        const transportBtn = document.querySelector('.transportForm_button')
+        transportBtn.addEventListener('click',function(){
+            location.href = './payment.html'
+        })
+    </script>
+
+</body>
+</html>
