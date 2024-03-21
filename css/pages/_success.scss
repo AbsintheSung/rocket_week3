@@ -3,8 +3,9 @@
     padding: 0px;
 
     @include Medium{
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 30px;
+        // padding-left: 30px;
+        // padding-right: 30px;
     }
     @include Large{
         padding-left: 26px;
