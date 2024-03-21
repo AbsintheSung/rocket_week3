@@ -40,9 +40,9 @@
                 <div class="formContent_title">
                     <h2 class="">運送</h2>
                     <ul class="timeline">
-                        <li class="timeline__item timeline_show"><a href="#"></a></li>
-                        <li class="timeline__item"><a href="#"></a></li>
-                        <li class="timeline__item"><a href="#"></a></li>
+                        <li class="timeline__item"><p class="timeline_state"></p></li>
+                        <li class="timeline__item"><p class="timeline_state"></p></li>
+                        <li class="timeline__item"><p class="timeline_state"></p></li>
                     </ul>
                 </div>
                 <form class="transportForm">
@@ -80,7 +80,7 @@
                                     <option value="三民區">三民區</option> 
                                     <option value="苓雅區">苓雅區 </option> 
                                     <option value="鹽埕區">鹽埕區</option> 
-                                    <option value="鹽埕區">鹽埕區</option> 
+
                                 </select>
 
                             </div>
@@ -204,10 +204,21 @@
     
 
     <script>
+
         const transportBtn = document.querySelector('.transportForm_button')
+        const timelineState = document.querySelectorAll('.timeline_state')
+
+        const paystate = 'carry'
+
         transportBtn.addEventListener('click',function(){
             location.href = './payment.html'
         })
+
+        if(paystate === 'carry'){
+            timelineState[0].classList.add('doingState')
+        }
+
+
     </script>
 
 </body>

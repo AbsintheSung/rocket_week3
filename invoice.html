@@ -17,9 +17,9 @@
             <div class="invoice_form_title">
                 <h2 class="">發票</h2>
                 <ul class="timeline">
-                    <li class="timeline__item timeline_show"><a href="#"></a></li>
-                    <li class="timeline__item"><a href="#"></a></li>
-                    <li class="timeline__item"><a href="#"></a></li>
+                    <li class="timeline__item"><p class="timeline_state"></p></li>
+                    <li class="timeline__item"><p class="timeline_state"></p></li>
+                    <li class="timeline__item"><p class="timeline_state"></p></li>
                 </ul>
             </div>
             <form class="invoiceForm">
@@ -46,6 +46,7 @@
                             <input type="checkbox" id="inv_addbox">
                             <label for="inv_addbox">同運送地址</label>
                         </div>
+
                         <div class="invoiceForm__address__select">
                             <div class="citybox">
                                 <select class="city">
@@ -61,11 +62,11 @@
                                     <option value="三民區">三民區</option> 
                                     <option value="苓雅區">苓雅區 </option> 
                                     <option value="鹽埕區">鹽埕區</option> 
-                                    <option value="鹽埕區">鹽埕區</option> 
                                 </select>
 
                             </div>
                         </div>
+
                         <input type="text" placeholder="幸福路 520 號">
                     </div>
 
@@ -156,6 +157,21 @@
     <!-- footer -->
 
     <script>
+        const timelineState = document.querySelectorAll('.timeline_state')
+        const timelineItem = document.querySelectorAll('.timeline__item')
+
+        const paystate = 'etc'
+
+        if(paystate === 'etc'){
+            for(let i=0 ; i<timelineState.length-1 ; i++){
+                timelineState[i].classList.add('finishState');
+                timelineItem[i].style.backgroundColor = "#EAF0ED";
+            }
+
+            timelineState[2].classList.add('doingState')
+        }
+
+
 
         const etcBtn =document.querySelector('.etcBtn')
         const paperBtn = document.querySelector('.paperBtn')

@@ -82,11 +82,15 @@
         
     }
 
+   
     &__deadline{
         display: flex;
         flex-direction: column;
+        // flex-wrap: wrap;
         row-gap: 8px;
+        // column-gap: 8px;
         >label{
+            width: 100%;
             color:$secondary;
             font-size: 20px;
         }
@@ -94,23 +98,55 @@
             display: flex;
             align-items: center;
             column-gap: 8px;
-            .month,.year{
+            // position: relative;
+            .monthbox,.yearbox{
                 width: 100%;
-                padding: 16px;
-                color: $primary;
-                background-color: $secondary;
-                border: none;
-                border-radius: 0px;
+                position: relative;
+                .month,.year{
+                    position: relative;
+                    appearance: none;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                    width: 100%;
+                    padding: 16px;
+                    color: $primary;
+                    background-color: $secondary;
+                    border: none;
+                    border-radius: 0px;
+                }
             }
+            .monthbox:after,
+            .yearbox:after{
+
+                content: '';
+                width: 0px;
+                height: 0px;
+                border: 5px solid;
+                position: absolute;
+                pointer-events: none;
+                top:10px;
+                right: 20px;
+                // z-index: 1;
+                border-color: transparent  transparent $primary transparent;
+            }
+            .monthbox::before,
+            .yearbox::before{
+        
+                content: '';
+                width: 0px;
+                height: 0px;
+                border: 5px solid;
+                position: absolute;
+                pointer-events: none;
+                bottom:10px;
+                right: 20px;
+                z-index: 1;
+                border-color: $primary transparent transparent transparent;
+            }
+          
         }
-        >input[type='text']{
-            width: 100%;
-            padding: 16px;
-            color: $primary;
-            background-color: $secondary;
-            border: none;
-            border-radius: 0px;
-        }
+
+
     }
     &__security{
         display: flex;

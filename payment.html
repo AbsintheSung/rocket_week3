@@ -18,9 +18,9 @@
             <div class="payment_formContent__title">
                 <h2 class="">付款</h2>
                 <ul class="timeline">
-                    <li class="timeline__item timeline_show"><a href="#"></a></li>
-                    <li class="timeline__item"><a href="#"></a></li>
-                    <li class="timeline__item"><a href="#"></a></li>
+                    <li class="timeline__item"><p class="timeline_state"></p></li>
+                    <li class="timeline__item"><p class="timeline_state"></p></li>
+                    <li class="timeline__item"><p class="timeline_state"></p></li>
                 </ul>
             </div>
             <form class="paymentForm">
@@ -41,21 +41,28 @@
                     </div>
                 </div>
 
+
                 <div class="paymentForm__deadline">
                     <label>有效期限</label>
                     <div class="paymentForm__deadline__select">
-                        <select class="month">
-                            <option value="none" selected disabled hidden>月</option> 
-                            <option value="2024">一月</option> 
-                            <option value="2025">二月</option> 
-                            <option value="2026">三月</option>  
-                        </select>
-                        <select class="year">
-                            <option value="none" selected disabled hidden>年</option> 
-                            <option value="2024">2024</option> 
-                            <option value="2025">2025 </option> 
-                            <option value="2026">2026</option>  
-                        </select>
+                        <div class="monthbox">
+                            <select class="month">
+                                <option value="none" selected disabled hidden>請選擇</option> 
+                                <option value="一月">一月</option> 
+                                <option value="二月">二月 </option> 
+                                <option value="三月">三月</option>  
+                            </select>
+                        </div>
+                        <div class="yearbox">
+                            <select class="year">
+                                <option value="none" selected disabled hidden>請選擇</option> 
+                                <option value="2024">2024</option> 
+                                <option value="2025">2025 </option> 
+                                <option value="2026">2026</option> 
+
+                            </select>
+
+                        </div>
                     </div>
                 </div>
 
@@ -147,10 +154,23 @@
     
 
     <script>
+        const timelineState = document.querySelectorAll('.timeline_state')
+        const timelineItem = document.querySelectorAll('.timeline__item')
         const payBtn = document.querySelector('.payment_button')
+
+        const paystate = 'pay'
+
         payBtn.addEventListener('click',()=>{
             location.href = './invoice.html'
         })
+
+        if(paystate === 'pay'){
+            timelineState[0].classList.add('finishState');
+            timelineItem[0].style.backgroundColor = "#EAF0ED";
+            timelineState[1].classList.add('doingState')
+        }
+
+       
     </script>
 </body>
 </html>

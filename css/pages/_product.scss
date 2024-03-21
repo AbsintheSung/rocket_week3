@@ -1,4 +1,3 @@
-//主架構
 .product_main{
     .product_body{
         padding-left: 0px;
@@ -183,43 +182,3 @@
 }
 
 
-// .product_cardList{
-//     // padding: 0px 30px;
-//     display: grid;
-//     grid-row-gap: 30px;
-//     grid-template-columns: repeat(1,1fr);
-//     li:nth-child(n+4){
-//         display: none;
-//     }
-//     @include Small{
-//         grid-template-columns: repeat(2,1fr);
-//         grid-column-gap: 20px;
-//         li:nth-child(n+4){
-//             display: inline-block;
-//         }
-//     }
-//     // @include Medium{
-//     //     padding: 0px;
-//     //     grid-template-columns: repeat(3,1fr);
-//     //     grid-column-gap: 20px;
-//     //     grid-row-gap: 20px;
-//     // }
-// }
-
-
-
-
-
-// .product_body{
-//     display: grid;
-//     grid-template-columns:repeat(1,1fr);
-//     @include Small{
-//         grid-template-columns:1fr 2fr;
-//         grid-column-gap: 20px;
-//     }
-
-//     // @include Medium{
-//     //     grid-template-columns:1fr 2fr;
-//     //     grid-column-gap: 20px;
-//     // }
-// }
