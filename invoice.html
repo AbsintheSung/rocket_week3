@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+    
+    <!-- header -->
+    
+    <main class="container invoice_container">
+        
+        <section class="invoice_form">
+
+            <div class="invoice_form_title">
+                <h2 class="">發票</h2>
+                <ul class="timeline">
+                    <li class="timeline__item timeline_show"><a href="#"></a></li>
+                    <li class="timeline__item"><a href="#"></a></li>
+                    <li class="timeline__item"><a href="#"></a></li>
+                </ul>
+            </div>
+            <form class="invoiceForm">
+                <div class="invoiceForm__type">
+                    <button class="etcBtn">電子發票</button>
+                    <button class="paperBtn">郵寄發票</button>
+                </div>
+                <div class="ectShow">
+                    <div class="invoiceForm__email">
+                        <label>電子郵箱</label>
+                        <input type="email" placeholder="example@email.com">
+                    </div>
+    
+                    <div class="invoiceForm__uniform">
+                        <label>統一編號（選填）</label>
+                        <input type="number" placeholder="12345678">
+                    </div>
+                </div>
+                <div class="paperShow">
+
+                    <div class="invoiceForm__address">
+                        <div class="invoiceForm__address__title">
+                            <label>地址</label>
+                            <input type="checkbox" for="inv_addbox">
+                            <label id="inv_addbox">同運送地址</label>
+                        </div>
+                        <div class="invoiceForm__address__select">
+                            <div class="citybox">
+                                <select class="city">
+                                    <option value="none" selected disabled hidden>請選擇</option> 
+                                    <option value="台北">台北</option> 
+                                    <option value="台中">台中 </option> 
+                                    <option value="高雄">高雄</option>  
+                                </select>
+                            </div>
+                            <div class="areabox">
+                                <select class="area">
+                                    <option value="none" selected disabled hidden>請選擇</option> 
+                                    <option value="三民區">三民區</option> 
+                                    <option value="苓雅區">苓雅區 </option> 
+                                    <option value="鹽埕區">鹽埕區</option> 
+                                    <option value="鹽埕區">鹽埕區</option> 
+                                </select>
+
+                            </div>
+                        </div>
+                        <input type="text" placeholder="幸福路 520 號">
+                    </div>
+
+                    <div class="invoiceForm__uniform">
+                        <label>統一編號（選填）</label>
+                        <input type="number" placeholder="12345678">
+                    </div>
+
+                </div>
+                <!-- <div class="invoiceForm__email">
+                    <label>電子郵箱</label>
+                    <input type="email" placeholder="example@email.com">
+                </div>
+
+                <div class="invoiceForm__uniform">
+                    <label>統一編號（選填）</label>
+                    <input type="number" placeholder="12345678">
+                </div> -->
+                
+
+            </form>
+            <button class="invoiceForm_button">確認結帳</button>
+
+        </section>
+
+        
+        <section class="statement">
+            <div class="statement__amount">
+                <h2>訂單摘要</h2>
+                <ul class="">
+                    <li>
+                        <p>小計</p>
+                        <p>NT$ 2,700</p>
+                    </li>
+                    <li>
+                        <p>運費</p>
+                        <p>NT$ 300</p>
+                    </li>
+                    <li>
+                        <p>總計</p>
+                        <p>NT$ 3,000</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="statement__item">
+                <h2>購物清單</h2>
+                <ul class="statementList">
+
+                    <li class="statementListItem">
+                        <div class="statementListItem__header">
+                            <img alt="購物清單圖片" src="./assets/img/p-3.png">
+                        </div>
+                        
+                        <div class="statementListItem__body">
+                            <p class="detail_name">焦糖馬卡龍（2）</p>
+                            <p class="detail_price">NT$ 900</p>
+                        </div>
+                    </li>
+                    
+                    <li class="statementListItem">
+                        <div class="statementListItem__header">
+                            <img alt="購物清單圖片" src="./assets/img/p-3.png">
+                        </div>
+                        <div class="statementListItem__body">
+                            <p class="detail_name">焦糖馬卡龍（2）</p>
+                            <p class="detail_price">NT$ 900</p>
+                        </div>
+                    </li>
+
+                    <li class="statementListItem">
+                        <div class="statementListItem__header">
+                            <img alt="購物清單圖片" src="./assets/img/p-3.png">
+                        </div>
+                        <div class="statementListItem__body">
+                            <p class="detail_name">焦糖馬卡龍（2）</p>
+                            <p class="detail_price">NT$ 900</p>
+                        </div>
+                    </li>
+
+                
+
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- footer -->
+
+    <script>
+
+        const etcBtn =document.querySelector('.etcBtn')
+        const paperBtn = document.querySelector('.paperBtn')
+        const ectShow = document.querySelector('.ectShow')
+        const paperShow = document.querySelector('.paperShow')
+        let isEtc = true
+        function stateHandleChange(isEtc){
+            if(isEtc){
+                ectShow.style.display = 'block'
+                paperShow.style.display = 'none'
+                etcBtn.classList.add('btn_handle')
+                paperBtn.classList.remove('btn_handle')
+            } else{
+                ectShow.style.display = 'none'
+                paperShow.style.display = 'block'
+                etcBtn.classList.remove('btn_handle')
+                paperBtn.classList.add('btn_handle')
+            }  
+        }
+        etcBtn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            isEtc = true
+            stateHandleChange(isEtc)
+        })
+        paperBtn.addEventListener('click',(e)=>{
+            e.preventDefault();
+            isEtc = false
+            stateHandleChange(isEtc)
+        })
+        stateHandleChange(isEtc)
+    </script>
+</body>
+</html>

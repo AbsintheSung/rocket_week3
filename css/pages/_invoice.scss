@@ -1,8 +1,13 @@
-.transport_container{
+.invoice_container{
     display: flex;
     justify-content: center;
     align-items: start;
     padding: 0px;
+
+    .invoice_form-etc{
+        width: 100%;
+        background-color: $primary;
+    }
 
     @include Small{
         // padding-left: 30px;
@@ -12,6 +17,9 @@
         column-gap: 20px;
         padding-top: 65px;
         padding-bottom: 65px;
+        .invoice_form-etc{
+            width: 50%;
+        }
     }
     @include Large{
         padding-left: 26px;
@@ -23,5 +31,3 @@
         padding-right: 42px;
     }
 }
-
-
