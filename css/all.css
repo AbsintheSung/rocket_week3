@@ -355,22 +355,52 @@ a {
   row-gap: 8px;
 }
 .transportForm__address > label {
+  width: 100%;
   color: #EAF0ED;
   font-size: 20px;
 }
-.transportForm__address > .select {
+.transportForm__address__select {
   display: flex;
   align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-.transportForm__address > .select .city, .transportForm__address > .select .area {
+.transportForm__address__select > div {
+  width: 100%;
+  position: relative;
+}
+.transportForm__address__select > div .city, .transportForm__address__select > div .area {
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   width: 100%;
   padding: 16px;
   color: #3F5D45;
   background-color: #EAF0ED;
   border: none;
   border-radius: 0px;
+}
+.transportForm__address__select .citybox:after,
+.transportForm__address__select .areabox:after {
+  content: url("../../assets/img/arrow_on.png");
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 20px;
+  pointer-events: none;
+}
+.transportForm__address__select .citybox::before,
+.transportForm__address__select .areabox::before {
+  content: url("../../assets/img/arrow_down.png");
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  bottom: 10px;
+  right: 20px;
 }
 .transportForm__address > input[type=text] {
   width: 100%;
