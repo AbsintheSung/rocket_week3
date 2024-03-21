@@ -43,8 +43,8 @@
                     <div class="invoiceForm__address">
                         <div class="invoiceForm__address__title">
                             <label>地址</label>
-                            <input type="checkbox" for="inv_addbox">
-                            <label id="inv_addbox">同運送地址</label>
+                            <input type="checkbox" id="inv_addbox">
+                            <label for="inv_addbox">同運送地址</label>
                         </div>
                         <div class="invoiceForm__address__select">
                             <div class="citybox">
@@ -161,6 +161,8 @@
         const paperBtn = document.querySelector('.paperBtn')
         const ectShow = document.querySelector('.ectShow')
         const paperShow = document.querySelector('.paperShow')
+        const invoiceBtn = document.querySelector('.invoiceForm_button')
+        
         let isEtc = true
         function stateHandleChange(isEtc){
             if(isEtc){
@@ -185,7 +187,12 @@
             isEtc = false
             stateHandleChange(isEtc)
         })
+        invoiceBtn.addEventListener('click',()=>{
+            location.href='./success.html'
+        })
         stateHandleChange(isEtc)
+
+
     </script>
 </body>
 </html>

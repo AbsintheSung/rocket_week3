@@ -776,6 +776,7 @@ a {
 .invoiceForm .paperShow .invoiceForm__address__title > label:first-child {
   color: #EAF0ED;
   font-size: 20px;
+  font-weight: 600;
 }
 .invoiceForm .paperShow .invoiceForm__address__title > input[type=checkbox] {
   margin-left: auto;
@@ -967,7 +968,7 @@ a {
 
 .header_nav {
   transition: 0.5s;
-  transform: translateY(-150px);
+  transform: translateY(-200px);
   position: absolute;
   top: 100%;
   width: calc(100% - 60px);
@@ -1013,8 +1014,9 @@ a {
 
 .nav_board {
   position: absolute;
+  top: 0;
   width: calc(100% - 60px);
-  height: 100%;
+  height: 80%;
   background-color: #FFFFFF;
   z-index: 2;
 }
@@ -1979,5 +1981,69 @@ a {
   .invoice_container {
     padding-left: 42px;
     padding-right: 42px;
+  }
+}
+
+.success_container {
+  padding: 0px;
+}
+@media (min-width: 767px) {
+  .success_container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .success_container {
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  .success_container {
+    padding-left: 42px;
+    padding-right: 42px;
+  }
+}
+
+.success_main {
+  width: 100%;
+  height: 518px;
+  padding-top: 210px;
+  background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2c5a2cf31c693f5c15fb08135bf1adf2&auto=format&fit=crop&w=800&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  align-items: center;
+}
+.success_main__title {
+  height: 45px;
+  width: 190px;
+}
+@media (min-width: 767px) {
+  .success_main {
+    padding-top: 130px;
+    height: 460px;
+  }
+}
+
+.success_btn {
+  display: block;
+  width: 100%;
+  padding: 20px 0px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: auto;
+  background-color: #FFE180;
+  color: #3F5D45;
+  text-align: center;
+}
+@media (min-width: 575px) {
+  .success_btn {
+    width: 300px;
+    margin-top: 0px;
   }
 }/*# sourceMappingURL=all.css.map */
