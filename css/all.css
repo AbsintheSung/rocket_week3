@@ -383,24 +383,24 @@ a {
 }
 .transportForm__address__select .citybox:after,
 .transportForm__address__select .areabox:after {
-  content: url("../../assets/img/arrow_on.png");
+  content: "";
+  border: 5px solid;
   position: absolute;
-  width: 20px;
-  height: 20px;
+  pointer-events: none;
   top: 10px;
   right: 20px;
-  pointer-events: none;
+  border-color: transparent transparent #3F5D45 transparent;
 }
 .transportForm__address__select .citybox::before,
 .transportForm__address__select .areabox::before {
-  content: url("../../assets/img/arrow_down.png");
+  content: "";
+  border: 5px solid;
   position: absolute;
-  z-index: 1;
   pointer-events: none;
-  width: 20px;
-  height: 20px;
   bottom: 10px;
   right: 20px;
+  z-index: 1;
+  border-color: #3F5D45 transparent transparent transparent;
 }
 .transportForm__address > input[type=text] {
   width: 100%;
