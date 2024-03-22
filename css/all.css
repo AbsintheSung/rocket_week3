@@ -1745,7 +1745,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-  margin-top: auto;
+  margin-bottom: auto;
 }
 .cart_main .cart_item {
   width: 100%;
