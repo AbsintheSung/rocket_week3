@@ -136,18 +136,20 @@ a {
   }
 }
 
+.footer_Send_to_test {
+  display: flex;
+  flex-direction: column;
+}
 .footer_Send_to_test main {
   width: 100%;
+  margin-top: auto;
 }
 @media (min-width: 575px) {
   .footer_Send_to_test {
-    display: flex;
-    flex-direction: column;
     height: 100dvh;
   }
   .footer_Send_to_test > main {
     width: 100%;
-    margin-top: auto;
   }
 }
 

@@ -32,20 +32,21 @@
 
 
 .footer_Send_to_test{
-    
+    display: flex;
+    flex-direction: column;
     // >footer{
     //     margin-top: auto;
     // }
     main{
         width: 100%;
+        margin-top: auto;  
     }
     @include Small{
-        display: flex;
-    flex-direction: column;
+       
         height: 100dvh;
         >main{
             width: 100%;
-            margin-top: auto;  
+           
         }
         >footer{
             // margin-top: auto;
