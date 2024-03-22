@@ -1133,6 +1133,7 @@ a {
   top: 16px;
 }
 .footer_subscribe .footer_form__input {
+  width: 100%;
   font-weight: 600;
   margin-left: auto;
   flex: 1;
