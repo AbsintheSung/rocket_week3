@@ -1117,6 +1117,7 @@ a {
 .footer_subscribe .footer_form {
   display: flex;
   position: relative;
+  min-width: 100%;
 }
 .footer_subscribe .footer_form__imgbox {
   position: absolute;
@@ -1126,6 +1127,7 @@ a {
 }
 .footer_subscribe .footer_form__input {
   width: 100%;
+  flex: 1;
   border: none;
   border-radius: 0px;
   outline: none;
