@@ -772,6 +772,7 @@ a {
 }
 .invoiceForm__type {
   display: flex;
+  min-height: 100%;
   align-items: center;
   -moz-column-gap: 1px;
        column-gap: 1px;

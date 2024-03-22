@@ -28,6 +28,7 @@
     padding: 30px;
     &__type{
         display: flex;
+        min-height: 100%;
         align-items: center;
         column-gap: 1px;
         margin-bottom: 14px;
