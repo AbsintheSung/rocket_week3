@@ -25,10 +25,10 @@
             position: absolute;
             left: 20px;
             top: 16px;
-            transform: translateY(-15%);
         }
         &__input{
-            min-width: 100%;
+            // min-width: 100%;
+            font-weight: 600;
             margin-left: auto;
             flex:1;
             border: none;

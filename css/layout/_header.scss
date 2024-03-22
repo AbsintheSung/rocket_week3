@@ -16,6 +16,11 @@
     .header__title{
         z-index: 3;
     }
+    @include Medium{
+        >a:hover{
+            transform: scale(1.1);
+        }
+    }
 }
 
 .header__title{
@@ -48,6 +53,7 @@
 .navbarStyle{
     position: relative;
     display: inline-block;
+    cursor: pointer;
     width: 24px;
     height: 24px;
     &__line{
@@ -120,12 +126,16 @@
         margin-left: auto;
         padding:0px;
         top:0px;
-        >.header_navlist{
+        .header_navlist{
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 60px;
-           
+            &__item{
+                a:hover{
+                    border-bottom: 2px solid $primary;
+                }
+            }
         }
         .header_navlist__item:last-child{
             > a {
