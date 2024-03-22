@@ -1672,7 +1672,7 @@ a {
 .login_form .login_formInfo__password > input {
   width: 100%;
   font-weight: 600;
-  padding: 12px 40px;
+  padding: 16px 40px;
   background-color: #EAF0ED;
   color: #3F5D45;
 }
