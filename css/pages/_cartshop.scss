@@ -2,10 +2,6 @@
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    // row-gap: 0px;
-
-    margin-top: auto;
-
     .cart_item{
         width: 100%;
         >.cart_title{
@@ -28,17 +24,7 @@
     }
     @include Medium{
         padding: 30px;
-        // column-gap: calc(100% - 66% - 33%);
-        // .cart_item{
-        //     width: 66%;
-        //     >.cartList{
-        //         padding: 30px 0px;
-        //         row-gap: 20px;
-        //     }
-        // }
-        // .cart_detail{
-        //     width: 33%;
-        // }
+
     }
     @include Large{
         padding-left: 26px;

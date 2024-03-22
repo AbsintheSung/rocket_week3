@@ -182,3 +182,11 @@
 }
 
 
+//樣式改變
+.present_page{
+    background-color: $primary;
+    >a{
+        color: $secondary !important;
+    }
+}
+
