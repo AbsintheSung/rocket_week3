@@ -89,7 +89,7 @@
     }
 }
 .header_navlist{
-    li:hover{
+    >li:hover{
         background-color: $primary;
         >a{
             width: 100%;
@@ -97,7 +97,7 @@
         }
        
     }
-    li{
+    >li{
         padding: 0px 12px;
         >a{
             display: inline-block;
@@ -106,7 +106,7 @@
         }
 
     }
-    li:nth-child(2){
+    >li:nth-child(2){
         margin: 12px 0px;
     }
     @include Medium{
@@ -115,13 +115,13 @@
         align-items: center;
         margin-right: 80px;
         gap: 60px;
-        li{
+        >li{
             padding: 0px;
         }
-        li:nth-child(2){
+        >li:nth-child(2){
             margin: 0px;
         }
-        li:hover{
+        >li:hover{
             background-color: $white;
             >a{
                 color: $primary;

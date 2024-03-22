@@ -2,7 +2,12 @@
     padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    row-gap: 0px;
+    // row-gap: 0px;
+
+    //以下2段 測試用來解決區塊間沒有重合的問題
+    height: 100%;
+    margin-top: auto;
+
     .cart_item{
         width: 100%;
         >.cart_title{

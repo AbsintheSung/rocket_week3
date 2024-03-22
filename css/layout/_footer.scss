@@ -42,7 +42,6 @@
             outline: none;
         }
         &__button{
-            // display: inline-block;
             margin-left: auto;
             border:none;
             padding: 16px 20px;
@@ -82,10 +81,10 @@
     &__list{
        display: flex;
        flex-direction: column;
-       li:first-child{
+       >li:first-child{
         margin-bottom: 40px;
        }
-       li{
+       >li{
         color: $primary;
         font-weight: 500;
        }
