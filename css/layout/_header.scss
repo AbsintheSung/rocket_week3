@@ -5,26 +5,12 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    // background-color: $white;
-    // z-index: 2;
-    >a{
-        z-index: 3;
-    }
-    >.navbarStyle{
-        z-index: 3;
-    }
-    .header__title{
-        z-index: 3;
-    }
-    @include Medium{
-        >a:hover{
-            transform: scale(1.1);
-        }
-    }
 }
 
 .header__title{
     >a{
+        display: inline-block;
+        width: 100%;
         >img{
             width: 100%;
             height: 24px;
@@ -34,20 +20,16 @@
                 height: 40px;
             }
         }
-        display: inline-block;
-        width: 100%;
     }
 }
 
 #navbarBtn{
     display: none;
-   
 }
 #navbarBtn:checked ~.header_nav {
-    // display: block;
-    // opacity: 1;
+
     transform: translateY(0px);
-    // z-index: 0;
+
 
 }
 .navbarStyle{
@@ -91,65 +73,92 @@
 
 
 .header_nav{
-    // display: none;
-    transition: .5s;
-    transform: translateY(-200px);
     position: absolute;
     top:100%;
     width: calc(100% - 60px);
-    z-index: 1;
-    // opacity: 0;
     background-color: $secondary;
     padding: 12px 0px;
-    .header_navlist__item{
-        a{
-            display: inline-block;
-            font-weight: 600;
-            color:$primary;
-        }
-    }
-    .header_navlist__item:nth-child(2){
-        margin: 12px 0px;
-    }
-
-
     @include Medium{
-        transition: 0s;
-        transform: translateY(0px);
-        z-index: 2;
-
         position: relative;
         display: block;
- 
         width: fit-content; //寬度 自適應內容
         background-color:$white;
         margin-left: auto;
         padding:0px;
         top:0px;
-        .header_navlist{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 60px;
-            &__item{
-                a:hover{
-                    border-bottom: 2px solid $primary;
-                }
-            }
+    }
+}
+.header_navlist{
+    li:hover{
+        background-color: $primary;
+        >a{
+            width: 100%;
+            color: $secondary;
         }
-        .header_navlist__item:last-child{
-            > a {
-                margin-right: 80px;
-            }
+       
+    }
+    li{
+        padding: 0px 12px;
+        >a{
+            display: inline-block;
+            font-weight: 600;
+            color:$primary;
         }
-        .header_navlist__item:nth-child(2){
+
+    }
+    li:nth-child(2){
+        margin: 12px 0px;
+    }
+    @include Medium{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 80px;
+        gap: 60px;
+        li{
+            padding: 0px;
+        }
+        li:nth-child(2){
             margin: 0px;
         }
+        li:hover{
+            background-color: $white;
+            >a{
+                color: $primary;
+                border-bottom: 1px solid $primary;
+            }
+            
+        }
+
     }
+
 }
 
 
 
+// 針對 nav到 手機版滑動效果
+.header_container{
+    >a{
+        z-index: 3;
+    }
+    >.navbarStyle{
+        z-index: 3;
+    }
+    .header__title{
+        z-index: 3;
+    }
+}
+.header_nav{
+    transition: .5s;
+    transform: translateY(-200px);
+    z-index: 1;
+    
+    @include Medium{
+        transition: 0s;
+        transform: translateY(0px);
+        z-index: 2;
+    }
+}
 
 .nav_board{
     position: absolute;

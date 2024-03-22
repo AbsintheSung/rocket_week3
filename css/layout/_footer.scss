@@ -21,7 +21,6 @@
     .footer_form{
         display: flex;
         position: relative;
-        // width: 100%;
         &__imgbox{
             position: absolute;
             left: 20px;
@@ -35,7 +34,6 @@
             flex:1;
             border: none;
             border-radius: 0px;
-            outline: none;
             padding: 16px 0px;
             padding-left: 50px;
             color:$primary
@@ -44,6 +42,8 @@
             outline: none;
         }
         &__button{
+            display: inline-block;
+            margin-left: auto;
             border:none;
             padding: 16px 20px;
             background-color: $btn_color;
@@ -58,17 +58,9 @@
         justify-content: space-between;
         padding-left: 80px;
         padding-right: 80px;
-        // >.footer_title{
-        //     width: 33%;
-        //     // margin-right: 62px
-        // };
-        &__title{
-            // width: 33%;
-            // width: 42%;
-        }
+
         >.footer_form{
             width: 42%;
-            // margin-left: 62px
         }
     }
 }
@@ -100,15 +92,7 @@
     }
     &__slogan{
         display: none;
-        
-        // >p{
-        //     font-size: 24px;
-        //     font-weight: bold;
-        //     color:var(--primary)
-        // }
-        // >p:last-child{
-        //     padding-top: 10px;
-        // }
+    
     }
     &__copyright{
         width: 100%;
@@ -132,17 +116,10 @@
             }
         }
         &__slogan{
-            
-            // display: flex;
-            // flex-direction: column;
-            // -webkit-writing-mode: vertical-rl;
-            // writing-mode: vertical-rl;
-            // letter-spacing: 5px; /* 設置 5px 間距 */
             display: block;
             >img{
                 width: 59px;
             }
-
         }
         &__copyright{
             display: flex;

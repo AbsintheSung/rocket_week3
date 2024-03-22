@@ -1,15 +1,5 @@
-.px-sm-30{
-    padding-left: 30px ;
-    padding-right: 30px;
-    @include Medium{
-        padding-left:0px ;
-        padding-right:0px  ;
-    }
-}
-.py-30{
-    padding-top:30px;
-    padding-bottom: 30px;
-}
+
+
 
 //當 內容不足以 撐高到 使用者裝置 高度的時候，解決footer 無法置底問題，在最外層 加上新的div 並給予此class
 .footer_Send_to_back{
@@ -21,7 +11,7 @@
     main{
         width: 100%;
     }
-    @include Small{
+    @include Medium{
         height: 100dvh;
         >footer{
             margin-top: auto;
