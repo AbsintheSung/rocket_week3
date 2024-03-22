@@ -1117,7 +1117,6 @@ a {
 .footer_subscribe .footer_form {
   display: flex;
   position: relative;
-  min-width: 100%;
 }
 .footer_subscribe .footer_form__imgbox {
   position: absolute;
@@ -1126,7 +1125,8 @@ a {
   transform: translateY(-15%);
 }
 .footer_subscribe .footer_form__input {
-  width: 100%;
+  min-width: 100%;
+  margin-left: auto;
   flex: 1;
   border: none;
   border-radius: 0px;
@@ -1335,9 +1335,8 @@ a {
 .introduce__listItem__imgcontent > img:last-child {
   width: 100%;
   height: 250px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .introduce__listItem__content {
   padding: 30px;

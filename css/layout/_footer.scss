@@ -21,7 +21,6 @@
     .footer_form{
         display: flex;
         position: relative;
-        min-width: 100%;
         &__imgbox{
             position: absolute;
             left: 20px;
@@ -29,7 +28,8 @@
             transform: translateY(-15%);
         }
         &__input{
-            width: 100%;
+            min-width: 100%;
+            margin-left: auto;
             flex:1;
             border: none;
             border-radius: 0px;
