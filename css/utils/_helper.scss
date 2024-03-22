@@ -31,26 +31,3 @@
 }
 
 
-.footer_Send_to_test{
-    display: flex;
-    flex-direction: column;
-    // >footer{
-    //     margin-top: auto;
-    // }
-    main{
-        width: 100%;
-        margin-top: auto;  
-    }
-    @include Small{
-       
-        height: 100dvh;
-        >main{
-            width: 100%;
-           
-        }
-        >footer{
-            // margin-top: auto;
-            // flex-grow: 1;
-        }
-    }
-}
