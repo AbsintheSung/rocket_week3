@@ -146,6 +146,7 @@ a {
     height: 100dvh;
   }
   .footer_Send_to_test > main {
+    width: 100%;
     margin-top: auto;
   }
 }
