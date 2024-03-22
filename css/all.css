@@ -136,6 +136,20 @@ a {
   }
 }
 
+.footer_Send_to_test main {
+  width: 100%;
+}
+@media (min-width: 575px) {
+  .footer_Send_to_test {
+    display: flex;
+    flex-direction: column;
+    height: 100dvh;
+  }
+  .footer_Send_to_test > main {
+    margin-top: auto;
+  }
+}
+
 .bg_primary {
   background-color: #3F5D45;
 }
@@ -1764,7 +1778,6 @@ a {
   row-gap: 8.5px;
 }
 .cartListItem__header {
-  width: 157px;
   height: 106px;
 }
 .cartListItem__header > img {
