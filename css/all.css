@@ -781,6 +781,7 @@ a {
 }
 .invoiceForm__type > button {
   width: 50%;
+  height: 100%;
   font-weight: 600;
   border: none;
   color: #EAF0ED;
