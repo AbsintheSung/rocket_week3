@@ -4,9 +4,7 @@
     flex-wrap: wrap;
     // row-gap: 0px;
 
-    //以下2段 測試用來解決區塊間沒有重合的問題
-    height: 100%;
-    margin-bottom: auto;
+
 
     .cart_item{
         width: 100%;
@@ -183,6 +181,7 @@
 
 //購物明細
 .cart_detail{
+    margin-top: auto;
     &__content{
         padding: 0px 30px 30px 30px;
         h2{
@@ -213,7 +212,7 @@
     }
     @include Large{
         // padding: 0px 18px;
-       
+        margin: 0px;
         &__content{
             // padding: 0px;
             padding: 0px 20px 16px 20px;
