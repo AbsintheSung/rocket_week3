@@ -1648,23 +1648,40 @@ a {
   padding: 30px;
 }
 .login_form .login_formInfo__account {
+  position: relative;
   margin-bottom: 16px;
 }
 .login_form .login_formInfo__account > input {
   width: 100%;
-  padding: 16px 20px;
+  padding: 16px 40px;
   font-weight: 600;
   background-color: #EAF0ED;
   color: #3F5D45;
 }
+.login_form .login_formInfo__account > span {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  color: #3F5D45;
+  transform: translateY(50%);
+}
 .login_form .login_formInfo__password {
+  position: relative;
   margin-bottom: 16px;
 }
 .login_form .login_formInfo__password > input {
   width: 100%;
-  padding: 16px 20px;
+  font-weight: 600;
+  padding: 12px 40px;
   background-color: #EAF0ED;
   color: #3F5D45;
+}
+.login_form .login_formInfo__password > span {
+  position: absolute;
+  left: 12px;
+  top: 0;
+  color: #3F5D45;
+  transform: translateY(50%);
 }
 .login_form .login_formInfo__checkbox {
   display: flex;
