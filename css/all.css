@@ -1744,6 +1744,7 @@ a {
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 .cart_main .cart_item {
   width: 100%;
@@ -1907,9 +1908,6 @@ a {
   }
 }
 
-.cart_detail {
-  margin-top: auto;
-}
 .cart_detail__content {
   padding: 0px 30px 30px 30px;
 }
@@ -1937,9 +1935,6 @@ a {
   background-color: #edc442;
 }
 @media (min-width: 992px) {
-  .cart_detail {
-    margin: 0px;
-  }
   .cart_detail__content {
     padding: 0px 20px 16px 20px;
     background-color: #3F5D45;
