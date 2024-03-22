@@ -31,6 +31,8 @@
         &__input{
             width: 100%;
             border: none;
+            // border-radius: 0px;
+            outline: none;
             padding: 16px 0px;
             padding-left: 50px;
             color:$primary
