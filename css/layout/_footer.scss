@@ -48,6 +48,7 @@
         }
         &__button:hover{
             cursor: pointer;
+            background-color: $btn-handle-color;
         }
     }
     @include Medium{

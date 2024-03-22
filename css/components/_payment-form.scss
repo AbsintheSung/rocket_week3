@@ -178,5 +178,6 @@
     cursor: pointer;
 }
 .payment_button:hover{
-    color: $secondary;
+    // color: $secondary;
+    background-color: $btn-handle-color;
 }

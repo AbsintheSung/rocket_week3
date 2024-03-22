@@ -203,7 +203,8 @@
     }
     button:hover{
         cursor: pointer;
-        color: $secondary;
+        background-color: $btn-handle-color;
+        // color: $secondary;
     }
     @include Large{
         // padding: 0px 18px;

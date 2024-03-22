@@ -194,7 +194,8 @@
     cursor: pointer;
 }
 .invoiceForm_button:hover{
-    color: $secondary;
+    // color: $secondary;
+    background-color: $btn-handle-color;
 }
 
 .btn_handle{
