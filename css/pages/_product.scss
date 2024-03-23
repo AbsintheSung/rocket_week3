@@ -158,7 +158,11 @@
             justify-content: center;
             align-items: center;
             color:$primary;
+            >img{
+                pointer-events: none;
+            }
         }
+
     }
     >li:not(:first-child){
         border-left: none;
@@ -168,12 +172,14 @@
             color:$white;
             background-color: $primary;
         }
+
     }
     li:first-child:hover,
     li:last-child:hover{
         >a{
             background-color: $secondary; 
         }
+
     }
 
     @include Small{
@@ -188,5 +194,6 @@
     >a{
         color: $secondary !important;
     }
+
 }
 

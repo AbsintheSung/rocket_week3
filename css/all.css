@@ -1560,6 +1560,9 @@ a {
   align-items: center;
   color: #3F5D45;
 }
+.product_pagesBtn > li > a > img {
+  pointer-events: none;
+}
 .product_pagesBtn > li:not(:first-child) {
   border-left: none;
 }

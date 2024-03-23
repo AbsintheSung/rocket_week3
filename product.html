@@ -163,11 +163,11 @@
 
         <section class="container product_footer">
             <ul class="product_pagesBtn">
-                <li><a href="#"><img alt="arrow_left" src="./assets/img/arrow_left.png"></a></li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#"><img alt="arrow_right" src="./assets/img/arrow_right.png"></a></li>
+                <li><a href="#" data-updown="pre"><img alt="arrow_left" src="./assets/img/arrow_left.png"></a></li>
+                <li><a href="#" data-pages="page1">1</a></li>
+                <li><a href="#" data-pages="page2">2</a></li>
+                <li><a href="#" data-pages="page3">3</a></li>
+                <li><a href="#" data-updown="next"><img alt="arrow_right" src="./assets/img/arrow_right.png"></a></li>
             </ul>
         </section>
 
@@ -219,12 +219,45 @@
     </footer>
 
     <script>
+        const tesBtn = document.querySelector('.product_pagesBtn')
         const btnPage = document.querySelectorAll('.product_pagesBtn li')
-        const pageNum = 1
+        let pageNum = 1
 
-        if( pageNum === 1 ){
-            btnPage[1].classList.add('present_page')
+
+
+
+        function changeState(pageNum){
+            for(let i = 0 ;i<btnPage.length;i++){
+                btnPage[i].classList.remove('present_page')
+            }
+            btnPage[pageNum].classList.add('present_page')
         }
+
+        tesBtn.addEventListener('click',function(e){
+            if(e.target.getAttribute('data-pages')){
+                e.preventDefault()
+                let matches = e.target.getAttribute('data-pages').match(/\d+/);
+                pageNum = matches
+                changeState(pageNum)
+            }
+            if(e.target.getAttribute('data-updown')==='pre'){
+                e.preventDefault()
+                pageNum--;
+                if( pageNum < 1 ) pageNum = 3
+                changeState(pageNum)
+            }
+            if(e.target.getAttribute('data-updown')==='next'){
+                e.preventDefault()
+                pageNum++
+                if( pageNum > 3 ) pageNum = 1
+                changeState(pageNum)
+            }
+            
+        })
+
+
+        changeState(pageNum)
+
     </script>
 
 </body>
