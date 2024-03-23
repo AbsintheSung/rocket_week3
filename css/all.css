@@ -1380,7 +1380,7 @@ a {
   .introduce__listItem__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 0px;
     width: 50%;
     max-height: 280px;
@@ -1391,10 +1391,9 @@ a {
     height: 307px;
     margin-top: -85px;
     align-self: start;
-    flex: 1;
   }
   .introduce__listItem__content > p {
-    flex: 1;
+    line-height: 2;
   }
 }
 
