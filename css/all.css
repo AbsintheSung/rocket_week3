@@ -1662,6 +1662,7 @@ a {
   padding: 16px 40px;
   font-weight: 600;
   background-color: #EAF0ED;
+  border-radius: 0px;
   color: #3F5D45;
 }
 .login_form .login_formInfo__account > span {
@@ -1680,6 +1681,7 @@ a {
   font-weight: 600;
   padding: 16px 40px;
   background-color: #EAF0ED;
+  border-radius: 0px;
   color: #3F5D45;
 }
 .login_form .login_formInfo__password > span {
