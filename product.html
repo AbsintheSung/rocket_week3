@@ -219,25 +219,25 @@
     </footer>
 
     <script>
-        const tesBtn = document.querySelector('.product_pagesBtn')
-        const btnPage = document.querySelectorAll('.product_pagesBtn li')
+        const pagesBtn = document.querySelector('.product_pagesBtn')
+        const pageList = document.querySelectorAll('.product_pagesBtn li')
         let pageNum = 1
 
 
 
 
         function changeState(pageNum){
-            for(let i = 0 ;i<btnPage.length;i++){
-                btnPage[i].classList.remove('present_page')
+            for(let i = 0 ;i < pageList.length;i++){
+                pageList[i].classList.remove('present_page')
             }
-            btnPage[pageNum].classList.add('present_page')
+            pageList[pageNum].classList.add('present_page')
         }
 
-        tesBtn.addEventListener('click',function(e){
+        pagesBtn.addEventListener('click',function(e){
             if(e.target.getAttribute('data-pages')){
                 e.preventDefault()
                 let matches = e.target.getAttribute('data-pages').match(/\d+/);
-                pageNum = matches
+                pageNum = Number(matches[0])
                 changeState(pageNum)
             }
             if(e.target.getAttribute('data-updown')==='pre'){
