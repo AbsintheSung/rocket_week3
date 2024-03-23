@@ -67,6 +67,14 @@ a {
   text-decoration: none;
 }
 
+.mySwiper {
+  padding-bottom: 45px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #3F5D45;
+}
+
 .container {
   margin: 0px auto;
   padding-left: 30px;
@@ -1395,14 +1403,8 @@ a {
 }
 
 .home_cardInfo {
-  padding-bottom: 30px;
+  padding-bottom: 15px;
 }
-@media (min-width: 767px) {
-  .home_cardInfo {
-    padding-bottom: 60px;
-  }
-}
-
 .product_main .product_body {
   padding-left: 0px;
   padding-right: 0px;
