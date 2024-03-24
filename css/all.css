@@ -1104,7 +1104,7 @@ a {
   background-color: #EAF0ED;
 }
 .pad_linkview > li {
-  padding: 16px;
+  padding: 0px 16px;
   background-color: #FFFFFF;
 }
 .pad_linkview > li > a {
