@@ -7,220 +7,215 @@
     <link rel="stylesheet" href="./css/all.css">
 </head>
 <body>
-    
-    <!-- header -->
-    <header class="container-fluid">
-        <div class="container  header_container">
-            <input type="checkbox" id="navbarBtn" >
-            <label for="navbarBtn" class="navbarStyle"><div class="navbarStyle__line"></div></label>
-    
-            <h1 class="header__title">
-                <a href="./index.html"><img src="https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/logotype-sm-dark.svg"></img></a>
-            </h1>
-    
-            <nav class="header_nav">
-                <ul class="header_navlist">
-                    <li><a href="./index.html">首頁</a></li>
-                    <li><a href="./product.html">甜點</a></li>
-                    <li><a href="./login.html">登入</a></li>
-                </ul>
-            </nav>
 
-            <div class="nav_board"></div>
-    
-            <a href="./cart.html"><img src="./assets//img/shopping_cart.png"  alt="購物車icon"></img></a>
-        </div>   
-    </header>
-
-    
-    <main class="container invoice_container">
+    <div class="footer_Send_to_back">
+        <!-- header -->
+        <header class="container-fluid">
+            <div class="container  header_container">
+                <input type="checkbox" id="navbarBtn" >
+                <label for="navbarBtn" class="navbarStyle"><div class="navbarStyle__line"></div></label>
         
-        <section class="invoice_form">
-
-            <div class="invoice_form_title">
-                <h2 class="">發票</h2>
-                <ul class="timeline">
-                    <li class="timeline__item"><p class="timeline_state"></p></li>
-                    <li class="timeline__item"><p class="timeline_state"></p></li>
-                    <li class="timeline__item"><p class="timeline_state"></p></li>
-                </ul>
-            </div>
-            <form class="invoiceForm">
-                <div class="invoiceForm__type">
-                    <button class="etcBtn">電子發票</button>
-                    <button class="paperBtn">郵寄發票</button>
-                </div>
-                <div class="ectShow">
-                    <div class="invoiceForm__email">
-                        <label>電子郵箱</label>
-                        <input type="email" placeholder="example@email.com">
-                    </div>
-    
-                    <div class="invoiceForm__uniform">
-                        <label>統一編號（選填）</label>
-                        <input type="number" placeholder="12345678">
-                    </div>
-                </div>
-                <div class="paperShow">
-
-                    <div class="invoiceForm__address">
-                        <div class="invoiceForm__address__title">
-                            <label>地址</label>
-                            <input type="checkbox" id="inv_addbox">
-                            <label for="inv_addbox">同運送地址</label>
-                        </div>
-
-                        <div class="invoiceForm__address__select">
-                            <div class="citybox">
-                                <select class="city">
-                                    <option value="高雄" selected disabled hidden>高雄</option> 
-                                    <option value="台北">台北</option> 
-                                    <option value="台中">台中 </option> 
-                                    <option value="高雄">高雄</option>  
-                                </select>
-                            </div>
-                            <div class="areabox">
-                                <select class="area">
-                                    <option value="新興區" selected disabled hidden>新興區</option> 
-                                    <option value="三民區">三民區</option> 
-                                    <option value="苓雅區">苓雅區 </option> 
-                                    <option value="新興區">新興區</option> 
-                                </select>
-
-                            </div>
-                        </div>
-
-                        <input type="text" placeholder="幸福路 520 號">
-                    </div>
-
-                    <div class="invoiceForm__uniform">
-                        <label>統一編號（選填）</label>
-                        <input type="number" placeholder="12345678">
-                    </div>
-
-                </div>
-                <!-- <div class="invoiceForm__email">
-                    <label>電子郵箱</label>
-                    <input type="email" placeholder="example@email.com">
-                </div>
-
-                <div class="invoiceForm__uniform">
-                    <label>統一編號（選填）</label>
-                    <input type="number" placeholder="12345678">
-                </div> -->
-                
-
-            </form>
-            <button class="invoiceForm_button">確認結帳</button>
-
-        </section>
-
+                <h1 class="header__title">
+                    <a href="./index.html"><img src="https://raw.githubusercontent.com/AbsintheSung/rocket_week3/96794343cf7abdbfe19f7bbd3698a5e7cd0077c3/assets/img/logotype-sm-dark.svg"></img></a>
+                </h1>
         
-        <section class="statement">
-            <div class="statement__amount">
-                <h2>訂單摘要</h2>
-                <ul class="">
-                    <li>
-                        <p>小計</p>
-                        <p>NT$ 2,700</p>
-                    </li>
-                    <li>
-                        <p>運費</p>
-                        <p>NT$ 300</p>
-                    </li>
-                    <li>
-                        <p>總計</p>
-                        <p>NT$ 3,000</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="statement__item">
-                <h2>購物清單</h2>
-                <ul class="statementList">
-
-                    <li class="statementListItem">
-                        <div class="statementListItem__header">
-                            <img alt="購物清單圖片" src="./assets/img/p-3.png">
-                        </div>
-                        
-                        <div class="statementListItem__body">
-                            <p class="detail_name">焦糖馬卡龍（2）</p>
-                            <p class="detail_price">NT$ 900</p>
-                        </div>
-                    </li>
-                    
-                    <li class="statementListItem">
-                        <div class="statementListItem__header">
-                            <img alt="購物清單圖片" src="./assets/img/p-3.png">
-                        </div>
-                        <div class="statementListItem__body">
-                            <p class="detail_name">焦糖馬卡龍（2）</p>
-                            <p class="detail_price">NT$ 900</p>
-                        </div>
-                    </li>
-
-                    <li class="statementListItem">
-                        <div class="statementListItem__header">
-                            <img alt="購物清單圖片" src="./assets/img/p-3.png">
-                        </div>
-                        <div class="statementListItem__body">
-                            <p class="detail_name">焦糖馬卡龍（2）</p>
-                            <p class="detail_price">NT$ 900</p>
-                        </div>
-                    </li>
-
-                
-
-                </ul>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- footer -->
-    <footer class="container-fluid">
-
-        <div class="bg_primary">
-
-            <div class="container footer_subscribe ">
-                <h2 class="footer_subscribe__title"><img alt="logo" src="./assets/img/logo-light.svg">訂閱你我的甜蜜</h2>
-                <form class="footer_form">
-                    <div class="footer_form__imgbox"><img src="./assets/img/mail-24px.png"></div>
-                    <input type="text" class="footer_form__input">
-                    <button class="footer_form__button"><img alt="按鈕箭頭" src="./assets/img/arrow_forward-24px.png"></button>
-                </form>
-            </div>
-
-        </div>
-       
-        <div class="bg_secondary">
-
-            <div class="container footer_info ">
-                
-                <ul class="footer_info__list">
-                    <li><a href="./index.html"><img class="footer_info_logo" alt="公司logo" src="./assets/img/logotype-sm-dark.svg"></a></li>
-                    <li>07-1234-5678 800</li>
-                    <li>sweetaste@email.com</li>
-                    <li>高雄市新興區幸福路 520 號</li>
-                </ul>
-                <div class="footer_info__slogan">
-                    <img alt="標語" src="./assets/img/lg-footer-slogan.svg">
-                    <!-- <p>今天是個</p>
-                    <p>吃甜點的好日子</p> -->
-                </div>
-                <div class="footer_info__copyright">
-                    <ul>
-                        <li><a href="#"><img class="footer_icon" alt="line-icon" src="./assets/img/ic-line@.svg"></a></li>
-                        <li><a href="#"><img class="footer_icon" alt="fb-icon" src="./assets/img/ic-facebook.svg"></a></a></li>
+                <nav class="header_nav">
+                    <ul class="header_navlist">
+                        <li><a href="./index.html">首頁</a></li>
+                        <li><a href="./product.html">甜點</a></li>
+                        <li><a href="./login.html">登入</a></li>
                     </ul>
-                    <span>© 2018 Sweetaste* All Rights Reserved</span>
+                </nav>
+
+                <div class="nav_board"></div>
+        
+                <a href="./cart.html"><img src="./assets//img/shopping_cart.png"  alt="購物車icon"></img></a>
+            </div>   
+        </header>
+
+        
+        <main class="container invoice_container">
+            
+            <section class="invoice_form">
+
+                <div class="invoice_form_title">
+                    <h2 class="">發票</h2>
+                    <ul class="timeline">
+                        <li class="timeline__item"><p class="timeline_state"></p></li>
+                        <li class="timeline__item"><p class="timeline_state"></p></li>
+                        <li class="timeline__item"><p class="timeline_state"></p></li>
+                    </ul>
+                </div>
+                <form class="invoiceForm">
+                    <div class="invoiceForm__type">
+                        <button class="etcBtn">電子發票</button>
+                        <button class="paperBtn">郵寄發票</button>
+                    </div>
+                    <div class="ectShow">
+                        <div class="invoiceForm__email">
+                            <label>電子郵箱</label>
+                            <input type="email" placeholder="example@email.com">
+                        </div>
+        
+                        <div class="invoiceForm__uniform">
+                            <label>統一編號（選填）</label>
+                            <input type="number" placeholder="12345678">
+                        </div>
+                    </div>
+                    <div class="paperShow">
+
+                        <div class="invoiceForm__address">
+                            <div class="invoiceForm__address__title">
+                                <label>地址</label>
+                                <input type="checkbox" id="inv_addbox">
+                                <label for="inv_addbox">同運送地址</label>
+                            </div>
+
+                            <div class="invoiceForm__address__select">
+                                <div class="citybox">
+                                    <select class="city">
+                                        <option value="高雄" selected disabled hidden>高雄</option> 
+                                        <option value="台北">台北</option> 
+                                        <option value="台中">台中 </option> 
+                                        <option value="高雄">高雄</option>  
+                                    </select>
+                                </div>
+                                <div class="areabox">
+                                    <select class="area">
+                                        <option value="新興區" selected disabled hidden>新興區</option> 
+                                        <option value="三民區">三民區</option> 
+                                        <option value="苓雅區">苓雅區 </option> 
+                                        <option value="新興區">新興區</option> 
+                                    </select>
+
+                                </div>
+                            </div>
+
+                            <input type="text" placeholder="幸福路 520 號">
+                        </div>
+
+                        <div class="invoiceForm__uniform">
+                            <label>統一編號（選填）</label>
+                            <input type="number" placeholder="12345678">
+                        </div>
+
+                    </div>
+     
+
+                </form>
+                <button class="invoiceForm_button">確認結帳</button>
+
+            </section>
+
+            
+            <section class="statement">
+                <div class="statement__amount">
+                    <h2>訂單摘要</h2>
+                    <ul class="">
+                        <li>
+                            <p>小計</p>
+                            <p>NT$ 2,700</p>
+                        </li>
+                        <li>
+                            <p>運費</p>
+                            <p>NT$ 300</p>
+                        </li>
+                        <li>
+                            <p>總計</p>
+                            <p>NT$ 3,000</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="statement__item">
+                    <h2>購物清單</h2>
+                    <ul class="statementList">
+
+                        <li class="statementListItem">
+                            <div class="statementListItem__header">
+                                <img alt="購物清單圖片" src="https://images.unsplash.com/photo-1504855328839-2f4baf9e0fd7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=db0c8e5539456faeca0e49c79e2ccb16&auto=format&fit=crop&w=800&q=60">
+                            </div>
+                            
+                            <div class="statementListItem__body">
+                                <p class="detail_name">焦糖馬卡龍（2）</p>
+                                <p class="detail_price">NT$ 900</p>
+                            </div>
+                        </li>
+                        
+                        <li class="statementListItem">
+                            <div class="statementListItem__header">
+                                <img alt="購物清單圖片" src="./assets/img/p-5.png">
+                            </div>
+                            <div class="statementListItem__body">
+                                <p class="detail_name">焦糖馬卡龍（2）</p>
+                                <p class="detail_price">NT$ 900</p>
+                            </div>
+                        </li>
+
+                        <li class="statementListItem">
+                            <div class="statementListItem__header">
+                                <img alt="購物清單圖片" src="./assets/img/p-3.png">
+                            </div>
+                            <div class="statementListItem__body">
+                                <p class="detail_name">焦糖馬卡龍（2）</p>
+                                <p class="detail_price">NT$ 900</p>
+                            </div>
+                        </li>
+
+                    
+
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- footer -->
+        <footer class="container-fluid">
+
+            <div class="bg_primary">
+
+                <div class="container footer_subscribe ">
+                    <h2 class="footer_subscribe__title"><img alt="logo" src="./assets/img/logo-light.svg">訂閱你我的甜蜜</h2>
+                    <form class="footer_form">
+                        <div class="footer_form__imgbox"><img src="./assets/img/mail-24px.png"></div>
+                        <input type="text" class="footer_form__input">
+                        <button class="footer_form__button"><img alt="按鈕箭頭" src="./assets/img/arrow_forward-24px.png"></button>
+                    </form>
+                </div>
+
+            </div>
+        
+            <div class="bg_secondary">
+
+                <div class="container footer_info ">
+                    
+                    <ul class="footer_info__list">
+                        <li><a href="./index.html"><img class="footer_info_logo" alt="公司logo" src="./assets/img/logotype-sm-dark.svg"></a></li>
+                        <li>07-1234-5678 800</li>
+                        <li>sweetaste@email.com</li>
+                        <li>高雄市新興區幸福路 520 號</li>
+                    </ul>
+                    <div class="footer_info__slogan">
+                        <img alt="標語" src="./assets/img/lg-footer-slogan.svg">
+                        <!-- <p>今天是個</p>
+                        <p>吃甜點的好日子</p> -->
+                    </div>
+                    <div class="footer_info__copyright">
+                        <ul>
+                            <li><a href="#"><img class="footer_icon" alt="line-icon" src="./assets/img/ic-line@.svg"></a></li>
+                            <li><a href="#"><img class="footer_icon" alt="fb-icon" src="./assets/img/ic-facebook.svg"></a></a></li>
+                        </ul>
+                        <span>© 2018 Sweetaste* All Rights Reserved</span>
+                    </div>
+
                 </div>
 
             </div>
 
-        </div>
-
-    </footer>
+        </footer>
+    </div>
+    
+   
 
     <script>
         const timelineState = document.querySelectorAll('.timeline_state')

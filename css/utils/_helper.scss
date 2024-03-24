@@ -3,9 +3,6 @@
 .footer_Send_to_back{
     display: flex;
     flex-direction: column;
-    // >footer{
-    //     margin-top: auto;
-    // }
     main{
         width: 100%;
     }
@@ -13,7 +10,6 @@
         height: 100dvh;
         >footer{
             margin-top: auto;
-            // flex-grow: 1;
         }
     }
 }
